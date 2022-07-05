@@ -1,0 +1,7 @@
+# Escrow Services
+
+A big challenge and risk today is using Bitcoin in DeFi. Because the Bitcoin blockchain does not natively communicate with other blockchains, there isn't a secure way to transfer, deposit, or lend your Bitcoin out without entrusting a custodian such as wBTC and opening yourself up to smart contract and third-party risk. Institutional services, such as Fireblocks, charge fees for holding your collateral while you use your deposit to trade against or create other structured financial products. Banks, exchanges, and lending desks are at the mercy of custodians and clearing houses who hold the private keys to YOUR Bitcoin.
+
+Traditional means of settlement for bonds, stocks, and commodities range from end-of-day cash settlement to t+3. In the today's age, there shouldn't be such hassle with guaranteeing delivery of an asset such as Bitcoin. Not only does using a custodial solution create the potential loss of private keys to that Bitcoin (which is now out of your control), it also means and extra transaction on the Blockchain which costs transaction fees!&#x20;
+
+Enter DLC.Link, the way to interact **directly** with your Bitcoin counterparty with the assurance of knowing all possible outcomes before ever signing any transactions with your private keys. Additionally, these transactions which create these "conditional Bitcoin payments" remain private to the blockchain. No person or party knows how the Bitcoin agreed upon with your counterparty is going to be dispersed. **Privacy** and **Certainty** are guaranteed!&#x20;
