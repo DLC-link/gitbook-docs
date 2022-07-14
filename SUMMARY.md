@@ -7,6 +7,7 @@
 
 ## Use Cases
 
+* [Lending with DLCs](use-cases/lending-with-dlcs.md)
 * [Escrow Services](use-cases/escrow-services.md)
 * [Arkadiko](use-cases/arkadiko/README.md)
   * [Minting USDB and Repayment](use-cases/arkadiko/minting-usdb-and-repayment.md)
@@ -14,7 +15,7 @@
 * [Syvita Guild](use-cases/syvita-guild/README.md)
   * [Non-Custodial Mining Pool](use-cases/syvita-guild/non-custodial-mining-pool.md)
 
-## Architecture&#x20;
+## Architecture
 
 * [Code Repository](architecture/code-repository.md)
 
