@@ -17,7 +17,6 @@
 ## Architecture
 
 * [Architecture Overview](architecture/architecture-overview.md)
-* [What are DLCs?](architecture/what-are-dlcs.md)
 * [Code Repository](architecture/code-repository.md)
 
 ***

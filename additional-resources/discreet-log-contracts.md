@@ -1,5 +1,7 @@
 # Discreet Log Contracts
 
+<figure><img src="../.gitbook/assets/DLC.Link_WhatAreDLCs_B.png" alt=""><figcaption></figcaption></figure>
+
 #### Whitepaper
 
 [Dryja, Thaddeus. "Discreet Log Contracts." _MIT Digital Currency Initiative_](https://adiabat.github.io/dlc.pdf)
@@ -15,8 +17,3 @@
 #### Blogs Dedicated to DLCs
 
 [Bitcoin Settled Derivatives](https://suredbits.com/) _Suredbits_
-
-
-
-
-
