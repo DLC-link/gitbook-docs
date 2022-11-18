@@ -12,7 +12,7 @@ description: >-
 
 ## **Jesse Eisenberg**
 
-[Jesse](the-team.md#jesse-eisenberg) has served in a number of software engineering and engineering management roles, spanning Pivotal Labs, MoPub and Twitter. He’s a serial entrepreneur excited to put his knowledge of blockchain to work.
+[Jesse](https://www.linkedin.com/in/jesses16/) has served in a number of software engineering and engineering management roles, spanning Pivotal Labs, MoPub and Twitter. He’s a serial entrepreneur excited to put his knowledge of blockchain to work.
 
 ## Matt Bombard
 
