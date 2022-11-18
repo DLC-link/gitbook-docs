@@ -4,7 +4,7 @@
 
 At a high level, the most important parts of the DLC.Link technical systems architecture are the following:
 
-* The Bitcoin (DLC) Oracle(TM), which acts as the mediator by signing the outcome for the DLC participants,
+* The Bitcoin (DLC) Oracle(TM), which acts as the mediator by signing the outcome for the DLC participants, ([learn more about DLCs](what-are-dlcs.md))
 * the smart contracts, from the application (defi, betting, escrow, etc) using DLCs, and the DLC.Link Management Contract,
 * and the wallets that participate in the DLC.&#x20;
 

@@ -7,7 +7,6 @@
 
 ## Use Cases
 
-* [Lending with DLCs](use-cases/lending-with-dlcs.md)
 * [Escrow Services](use-cases/escrow-services.md)
 * [Arkadiko](use-cases/arkadiko/README.md)
   * [Minting USDB and Repayment](use-cases/arkadiko/minting-usdb-and-repayment.md)
@@ -17,8 +16,9 @@
 
 ## Architecture
 
-* [Code Repository](architecture/code-repository.md)
 * [Architecture Overview](architecture/architecture-overview.md)
+* [What are DLCs?](architecture/what-are-dlcs.md)
+* [Code Repository](architecture/code-repository.md)
 
 ***
 
