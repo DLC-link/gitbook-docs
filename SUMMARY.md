@@ -16,8 +16,8 @@
 
 ## Architecture
 
-* [Architecture Overview and App Flow](architecture/architecture-overview-and-app-flow.md)
-* [Tech Stack](architecture/tech-stack.md)
+* [Technical Application Flow](architecture/technical-application-flow.md)
+* [Tech Stack and Architecture Overview](architecture/tech-stack-and-architecture-overview.md)
 * [Code Repositories](architecture/code-repository.md)
 
 ***
