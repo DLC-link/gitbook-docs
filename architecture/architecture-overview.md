@@ -30,7 +30,7 @@ The user wants to repay their stable-coin loan and regain access to their bitcoi
 
 1. The user navigates to the defi applications webpage and chooses to repay the loan.
 2. The user initiates the sending of the stable-coin via the application's smart contract.
-3. The application's smart contact communicates with the DLC.Link management smart contract to begin the closing of the DLC. The Bitcoin Oracle signs an outcome for the repayment (other possible outcome could have been liquidation).
-4. A callback to the application's smart contract notifies it that the DLC is ready to be closed.
-5. The application's protocol wallet puts the closing transaction on the BTC blockchain.
-6. &#x20;The user can now see the funds in their BTC wallet, and the loan closing is complete.
+3. The application's smart contact communicates with the DLC.Link management smart contract to begin the closing of the DLC. The Bitcoin Oracle signs an outcome for the repayment (other possible outcome could have been liquidation). \
+   A callback to the application's smart contract notifies it that the DLC is ready to be closed, and the defi applications website is updated.
+4. The application's protocol wallet puts the closing transaction on the BTC blockchain.
+5. &#x20;The user can now see the funds in their BTC wallet, and the loan closing is complete.
