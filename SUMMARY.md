@@ -16,7 +16,7 @@
 
 ## Architecture
 
-* [Architecture Overview](architecture/architecture-overview.md)
+* [Architecture Overview and App Flow](architecture/architecture-overview-and-app-flow.md)
 * [Tech Stack](architecture/tech-stack.md)
 * [Code Repositories](architecture/code-repository.md)
 
