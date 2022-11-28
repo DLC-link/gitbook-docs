@@ -12,6 +12,8 @@ The DLC.Link architecture can be understood more thoroughly through the example 
 
 ### Open Loan Flow Example
 
+<figure><img src="../.gitbook/assets/DLC.Link_OpenLoan_TechnicalFlow_NewA.png" alt=""><figcaption></figcaption></figure>
+
 In the below example, a user wants to use native, self-custodial bitcoin as collateral for a stable-coin loan on a blockchain such as Ethereum, Stacks, or many others.&#x20;
 
 1. The user browses to the defi application's webpage and fills in the details of the loan they want to take, using BTC as collateral.
@@ -20,9 +22,9 @@ In the below example, a user wants to use native, self-custodial bitcoin as coll
 4. Once signed, the DLC transaction is submitted to the bitcoin blockchain. The application's smart contract is notified once the DLC is confirmed.&#x20;
 5. The application's smart contract now has a guarantee of BTC collateral, and releases the loaned asset (stable coin, etc) into the user's wallet.
 
-<figure><img src="../.gitbook/assets/infographic_technical_open_loan.png" alt=""><figcaption><p>Opening a defi loan backed by native non-custodial BTC</p></figcaption></figure>
-
 ### Close Loan Flow
+
+<figure><img src="../.gitbook/assets/DLC.Link_CloseLoan_TechnicalFlow_NewA.png" alt=""><figcaption></figcaption></figure>
 
 The user wants to repay their stable-coin loan and regain access to their bitcoin collateral.&#x20;
 
@@ -32,5 +34,3 @@ The user wants to repay their stable-coin loan and regain access to their bitcoi
 4. A callback to the application's smart contract notifies it that the DLC is ready to be closed.
 5. The application's protocol wallet puts the closing transaction on the BTC blockchain.
 6. &#x20;The user can now see the funds in their BTC wallet, and the loan closing is complete.
-
-<figure><img src="../.gitbook/assets/DLC.Link_CloseLoan_TechnicalFlow_previewE.png" alt=""><figcaption></figcaption></figure>

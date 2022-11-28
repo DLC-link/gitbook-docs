@@ -2,7 +2,7 @@
 
 ## Minting
 
-The mint process is identical as described in the [previous scenario](https://app.gitbook.com/s/4HE0RJ2niQGWGQHbIHC8/use-cases/arkadiko/minting-usdb-and-repayment).
+The mint process is identical as described in the [previous scenario](broken-reference).
 
 ## Liquidation
 
