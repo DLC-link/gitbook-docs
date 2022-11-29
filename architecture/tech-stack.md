@@ -1,4 +1,4 @@
-# Tech Stack
+# Tech Stack and Architecture Overview
 
 ## Philosophy - Secure, Resilient, Trustless
 
