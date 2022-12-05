@@ -1,6 +1,6 @@
 ---
 description: All of DLC.Link's public documentation, in one place.
-cover: .gitbook/assets/GitBook_Header_DLC.Link (1) (1).png
+cover: .gitbook/assets/GitBook_Header_DLC.Link (1).png
 coverY: 0
 ---
 
