@@ -12,7 +12,7 @@ The DLC.Link architecture can be understood more thoroughly through the example 
 
 ### Open Loan Flow Example
 
-<figure><img src="../.gitbook/assets/DLC.Link_OpenLoan_TechnicalFlow_NewA.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DLC.Link_OpenLoan_TechnicalFlow_NewA5.png" alt=""><figcaption></figcaption></figure>
 
 In the below example, a user wants to use native, self-custodial bitcoin as collateral for a stable-coin loan on a blockchain such as Ethereum, Stacks, or many others.&#x20;
 
