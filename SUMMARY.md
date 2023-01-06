@@ -16,7 +16,10 @@
 
 ## Architecture
 
-* [Technical Application Flow - Simple Case](architecture/technical-application-flow-simple-case.md)
+* [Technical Application Designs](architecture/technical-application-designs/README.md)
+  * [Simple Case](architecture/technical-application-designs/simple-case.md)
+  * [With Broker](architecture/technical-application-designs/with-broker.md)
+  * [With Broker and Proof of Reserve Token](architecture/technical-application-designs/with-broker-and-proof-of-reserve-token.md)
 * [Tech Stack and Architecture Overview](architecture/tech-stack.md)
 * [Code Repositories](architecture/code-repository.md)
 
