@@ -16,7 +16,7 @@
 
 ## Architecture
 
-* [Technical Application Flow](architecture/architecture-overview.md)
+* [Technical Application Flow - Simple Case](architecture/technical-application-flow-simple-case.md)
 * [Tech Stack and Architecture Overview](architecture/tech-stack.md)
 * [Code Repositories](architecture/code-repository.md)
 
