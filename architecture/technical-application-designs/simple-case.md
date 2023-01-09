@@ -38,3 +38,5 @@ Above a user wants to repay their stable-coin loan and regain access to their bi
 ### Close Loan via Liquidation Flow
 
 When the value of a user's collateral drops below a certain threshold, there can be a liquidation event. Here, a **liquidator** identifies the undercollateralized loan and starts a process to repay the loaned asset and 'buy out' the remaining collateral at a discount, thus keeping the value of the loaned asset stable.
+
+<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow (1).png" alt=""><figcaption></figcaption></figure>
