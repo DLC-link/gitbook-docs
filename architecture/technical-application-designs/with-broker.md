@@ -26,6 +26,6 @@ See below for an example setup of a **Broker** supported Bitcoin-collateral loan
 
 Here you can see an example of the internals of the isolated liquidity pool, continuing from the previous defi lending example we've been development so far.
 
-In this diagram, the liquidators are account holders on the Propine platform. They can use funds with Propine to pool into a liquidation fund, which covers the natvie Bitcoin collateralized loan. When the native Bitcoin payment is received by a Propine Bitcoin wallet, the funds can be disbursed to the account holders.
+In this diagram, the liquidators are account holders on the Propine platform. They can use funds with Propine to pool into a liquidation fund, which covers the native Bitcoin collateralized loan. When the native Bitcoin payment is received by a Propine Bitcoin wallet, the funds can be disbursed to the account holders.
 
 <figure><img src="../../.gitbook/assets/DLC.Link_PropineManagedLiquidation.png" alt=""><figcaption></figcaption></figure>
