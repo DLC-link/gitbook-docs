@@ -14,6 +14,8 @@ Depending on what type of product you're integrating into, we have a different l
 
 To use DLCs from your Ethereum contract, and let users move native bitcoin directly, import our contract and call the public functions as shown below.
 
+Note: to always get the most up to date information about the library, please see the README of the repo here: [https://github.com/DLC-link/dlc-solidity-smart-contract](https://github.com/DLC-link/dlc-solidity-smart-contract)
+
 ```solidity
 import "github.com/dlc-link/dlc-solidity-smart-contract/contracts/DLCManager.sol";
 
@@ -59,4 +61,4 @@ function postCloseDLCHandler(bytes32 uuid) external;
 
 ### Bitcoin Wallets
 
-### &#x20;Oracle Service
+### Oracle Service
