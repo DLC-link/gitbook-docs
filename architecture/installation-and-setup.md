@@ -25,13 +25,22 @@ DLCManager _dlcManager = DLCManager(publcDLCManagerContractAddress);
 // @parameters
 // emergencyRefundTime: The time at which the DLC can be cancelled, if any. Format: seconds from epoch
 // nonce: An ID unique to this application to match the response in the callback.
-//
-// @return
-// UUID (bytes32): The UUID of the DLC.
 bytes32 dlcUUID = _dlcManager.createDLC(emergencyRefundTime, nonce);
+
+// Overwrite this function to complete your DLC setup logic
+function postCreateDLCHandler(bytes32 uuid) external;
+
+// Overwrite this function to run custom logic when the DLC has been funded
+function setStatusFunded(bytes32 uuid) external;
 
 // If desired, mint an NFT representing the Bitcoin contract which can be transfered and borrowed against.
 _dlcManager.mintBtcNft(dlcUUID);
+
+// Overwrite this function to complete the mintNFT logic
+function postMintBtcNft(bytes32 uuid, uint256 nftId) external;
+
+// Overwrite this function to receive the price of BTC when closing the DLC
+function getBtcPriceCallback(bytes32 uuid, int256 price, uint256 timestamp) external;
 
 // Close the DLC, which sends the collateral out of the Bitcoin DLC at the given ratio.
 //
@@ -39,6 +48,9 @@ _dlcManager.mintBtcNft(dlcUUID);
 // payoutRatio: Number between 0 and 100 representing the % of bitcoin paid out from the DLC to the original participants
 //              0 means the user gets all the collateral, 100 means this contract gets all the collateral.
  _dlcManager.closeDLC(dlcUUID, payoutRatio);
+ 
+ // Overwrite this function to complete the close DLC logic
+function postCloseDLCHandler(bytes32 uuid) external;
 ```
 
 #### Stacks / Clarity
