@@ -1,6 +1,6 @@
 # Table of contents
 
-* [DLC.Link Document Hub](README.md)
+* [DLC.Link - Docs Home](README.md)
 * [Partnerships](partnerships.md)
 * [Lightpaper](lightpaper.md)
 * [The Team](the-team.md)
