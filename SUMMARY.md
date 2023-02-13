@@ -16,6 +16,7 @@
 
 ## Architecture
 
+* [Installation and Setup](architecture/installation-and-setup.md)
 * [Tech Stack and Architecture Overview](architecture/tech-stack.md)
 * [Technical Application Designs](architecture/technical-application-designs/README.md)
   * [Simple Case](architecture/technical-application-designs/simple-case.md)
