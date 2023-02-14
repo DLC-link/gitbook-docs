@@ -2,7 +2,7 @@
 
 * [DLC.Link - Documentation](README.md)
 * [Partnerships](partnerships.md)
-* [Whitepaper](whitepaper.md)
+* [Whitepaper](lightpaper.md)
 * [The Team](the-team.md)
 
 ## Use Cases
