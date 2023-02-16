@@ -6,10 +6,10 @@
 
 To use DLCs from your Ethereum contract, and let users move native bitcoin directly, import our contract and call the public functions as shown below.
 
-Note: to always get the most up to date information about the library, please see the README of the repo here: [https://github.com/DLC-link/dlc-solidity-smart-contract](https://github.com/DLC-link/dlc-solidity-smart-contract)
+Note: to always get the most up to date information about the library, please see the README of the repo here: [https://github.com/DLC-link/dlc-solidity](https://github.com/DLC-link/dlc-solidity)
 
 ```solidity
-import "github.com/dlc-link/dlc-solidity-smart-contract/contracts/DLCManager.sol";
+import "github.com/dlc-link/dlc-solidity/contracts/DLCManager.sol";
 
 // In your constructor, create your DLCManager instance, pointing to our public contract.
 DLCManager _dlcManager = DLCManager(publcDLCManagerContractAddress);
