@@ -8,10 +8,10 @@ DLC.Link has libraries allowing for simple and fast configuration of DLCs in you
 
 Depending on what type of product you're integrating into, we have a different library build just for you.
 
-[Ethereum / Solidity](solidity.md)
+[Ethereum / Solidity](installation-and-setup/solidity.md)
 
-[Stacks / Clarity](stacks-clarity.md)
+[Stacks / Clarity](installation-and-setup/stacks-clarity.md)
 
-[Bitcoin Wallets](bitcoin-wallets.md)
+[Bitcoin Wallets](installation-and-setup/bitcoin-wallets.md)
 
-Bitcoin Oracle Nodes
+[Bitcoin Oracle Nodes](installation-and-setup/bitcoin-oracle-nodes.md)

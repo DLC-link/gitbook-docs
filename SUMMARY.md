@@ -16,7 +16,7 @@
 
 ## Architecture
 
-* [Installation and Setup](architecture/installation-and-setup/README.md)
+* [Installation and Setup](architecture/installation-and-setup.md)
   * [Solidity](architecture/installation-and-setup/solidity.md)
   * [Stacks / Clarity](architecture/installation-and-setup/stacks-clarity.md)
   * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
