@@ -1,3 +1,3 @@
 # Whitepaper
 
-{% file src=".gitbook/assets/DLC.Link Whitepaper v1.pdf" %}
+{% file src=".gitbook/assets/DLC.Link_Whitepaper_v1.1.pdf" %}
