@@ -6,9 +6,9 @@ description: Links to the various github repos for DLC.Link
 
 This documentation site, for helping us add details and make corrections - [DLC.Link Docs](https://github.com/DLC-link/gitbook-docs)
 
-Monorepo for all Stacks chain smart contracts - [stacks-contracts-all](https://github.com/DLC-link/stacks-contracts-all)
+Monorepo for all Stacks chain smart contracts - [dlc-stacks](https://github.com/DLC-link/dlc-stacks)
 
-Solidity smart contracts for EVM compatible blockchains - [dlc-solidity-smart-contract](https://github.com/DLC-link/dlc-solidity-smart-contract)
+Solidity smart contracts for EVM compatible blockchains - [dlc-solidity](https://github.com/DLC-link/dlc-solidity)
 
 Library for managing DLCs in Rust [rust-dlc](https://github.com/DLC-link/rust-dlc)
 
