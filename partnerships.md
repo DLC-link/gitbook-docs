@@ -8,7 +8,7 @@ description: Blockchains, Applications and Teams building with DLC.Link
 
 [Stacks](https://www.stacks.co/) is an open-source network of decentralized apps and smart contracts built on Bitcoin\_.\_
 
-[Clarity](https://docs.stacks.co/write-smart-contracts/overview), the smart contract language which powers Stacks, optimizes for predictability and security, to allow developers to encode essential business logic on a blockchain. But today, Clarity can only package transactions and information to include them in a Bitcoin block. There are no conditional payments or transfer of Bitcoin that can get triggered by Clarity. Our DLC bridge plugs that hole, which brings unique capabilities to the entire ecosystem.
+[Clarity](https://docs.stacks.co/write-smart-contracts/overview), the smart contract language which powers Stacks, optimizes for predictability and security, to allow developers to encode essential business logic on a blockchain. But today, Clarity can only package transactions and information to include them in a Bitcoin block. There are no conditional payments or transfer of Bitcoin that can get triggered by Clarity. Our DLC bridge plugs that hole, which brings unique capabilities to the entire ecosystem!
 
 DLC.Link was awarded a [$250,000 grant ](https://github.com/stacksgov/Stacks-Grants/issues/289)to help build this infrastructure to bring true Bitcoin DeFi to Stacks. Below are the monthly presentation to help you follow along what we've been working on!
 
