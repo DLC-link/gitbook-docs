@@ -1,5 +1,7 @@
 # Bitcoin Wallets
 
+<figure><img src="../../.gitbook/assets/DLC.Link_WalletIntegration_Flow (1).png" alt=""><figcaption></figcaption></figure>
+
 ### Bitcoin Wallets
 
 Signing a DLC requires functionality not always present in existing Bitcoin wallets on the market. To fulfill this requirement, DLC.Link will provide open-source libraries in the Rust and JavaScript programming languages.

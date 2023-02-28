@@ -12,4 +12,4 @@ To repay the loan and have the BTC returned, the user can navigate to their loan
 
 ## Diagram
 
-![](<../../.gitbook/assets/Arkadiko + DLC.Link - Page 1 (1).png>)
+![](<../../.gitbook/assets/Arkadiko + DLC.Link - Page 1.png>)
