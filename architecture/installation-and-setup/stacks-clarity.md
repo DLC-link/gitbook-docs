@@ -2,13 +2,13 @@
 
 #### Stacks / Clarity
 
-The Clarity contract bringing DLC.Link functionality to Stacks can be found in [this repository.](https://github.com/DLC-link/stacks-contracts-all)
+The Clarity contract bringing DLC.Link functionality to Stacks can be found in [this repository.](https://github.com/dlc-link/dlc-clarity)
 
-The best way to understanding integration with our Clarity smart contracts is by reading our [example protocol-contract](https://github.com/DLC-link/stacks-contracts-all/blob/main/examples/sample-contract-loan.clar).
+The best way to understanding integration with our Clarity smart contracts is by reading our [example protocol-contract](https://github.com/DLC-link/dlc-clarity/blob/main/examples/sample-contract-loan.clar).
 
 Due to the limitations of Stacks nodes, currently we must manually register contracts that wish to communicate with ours. Our `register-contract` function is picked up by the DLC.Link Blockchain Observer, thus allowing us to hear and process external calls of our functions correctly. Please contact us so that we can do the necessary steps.
 
-Contracts wishing to communicate with ours must implement the following [dlc-link-callback-trait](https://github.com/DLC-link/stacks-contracts-all/blob/main/contracts/dlc-link-callback-trait.clar) to enable the proper callback functionalities:
+Contracts wishing to communicate with ours must implement the following [dlc-link-callback-trait](https://github.com/DLC-link/dlc-clarity/blob/main/contracts/dlc-link-callback-trait.clar) to enable the proper callback functionalities:
 
 ```clarity
 (use-trait cb-trait 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.dlc-link-callback-trait-v2.dlc-link-callback-trait)

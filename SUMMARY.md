@@ -11,8 +11,8 @@
 * [Arkadiko Defi Loans](use-cases/arkadiko/README.md)
   * [Minting USDB and Repayment](use-cases/arkadiko/minting-usdb-and-repayment.md)
   * [Minting USDB and Liquidation](use-cases/arkadiko/minting-usdb-and-liquidation.md)
-* [Syvita Guild Decentralized Mining Rewards](use-cases/syvita-guild/README.md)
-  * [Non-Custodial Mining Pool](use-cases/syvita-guild/non-custodial-mining-pool.md)
+* [Syvita Guild Decentralized Mining Rewards](use-cases/syvita-guild-decentralized-mining-rewards/README.md)
+  * [Non-Custodial Mining Pool](use-cases/syvita-guild-decentralized-mining-rewards/non-custodial-mining-pool.md)
 
 ## Architecture
 
