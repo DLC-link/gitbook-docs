@@ -1,2 +1,0 @@
-# Non-Custodial Mining Pool
-

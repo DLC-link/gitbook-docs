@@ -1,6 +1,6 @@
 # Bitcoin Wallets
 
-<figure><img src="../../.gitbook/assets/DLC.Link_WalletIntegration_Flow (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_WalletIntegration_Flow.png" alt=""><figcaption></figcaption></figure>
 
 ### Bitcoin Wallets
 
