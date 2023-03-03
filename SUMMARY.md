@@ -9,7 +9,6 @@
 
 * [Minting a Collateralized Bitcoin NFT](use-cases/escrow-services.md)
 * [Borrowing with Self-Custodied Bitcoin](use-cases/arkadiko/README.md)
-  * [Minting USDB and Repayment](use-cases/arkadiko/minting-usdb-and-repayment.md)
   * [Repayment](use-cases/arkadiko/minting-usdb-and-liquidation.md)
   * [Liquidation](use-cases/arkadiko/liquidation.md)
 
