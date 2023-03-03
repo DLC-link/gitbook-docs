@@ -7,10 +7,11 @@
 
 ## Use Cases
 
-* [Escrow Services](use-cases/escrow-services.md)
-* [Arkadiko Defi Loans](use-cases/arkadiko/README.md)
+* [Minting a Collateralized Bitcoin NFT](use-cases/escrow-services.md)
+* [Borrowing with Self-Custodied Bitcoin](use-cases/arkadiko/README.md)
   * [Minting USDB and Repayment](use-cases/arkadiko/minting-usdb-and-repayment.md)
-  * [Minting USDB and Liquidation](use-cases/arkadiko/minting-usdb-and-liquidation.md)
+  * [Repayment](use-cases/arkadiko/minting-usdb-and-liquidation.md)
+  * [Liquidation](use-cases/arkadiko/liquidation.md)
 
 ## Architecture
 
