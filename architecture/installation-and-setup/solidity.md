@@ -14,7 +14,7 @@ import "github.com/dlc-link/dlc-solidity/contracts/DLCManager.sol";
 // In your constructor, create your DLCManager instance, pointing to our public contract.
 DLCManager _dlcManager = DLCManager(publcDLCManagerContractAddress);
 
-// createDLC: Creates the DLC in the DLC Manager contract, as well as in the Oracle network.
+// createDLC: Creates the DLC in the DLC Manager contract, as well as in the Attestor network.
 //
 // @parameters
 // emergencyRefundTime: The time at which the DLC can be cancelled, if any. Format: seconds from epoch

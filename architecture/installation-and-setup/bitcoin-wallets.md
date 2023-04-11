@@ -146,7 +146,7 @@ Bitcoin Lending Flow
 
 Step 1: Receive Offer
 
-An offer will be received once the contract is set up in the dApp, sent to the dApp’s DLC-enabled BTC wallet (offeror’s wallet), validated, and signed by the offeror. An offer will include a contract that already contains an Oracle announcement and offeror parameters.
+An offer will be received once the contract is set up in the dApp, sent to the dApp’s DLC-enabled BTC wallet (offeror’s wallet), validated, and signed by the offeror. An offer will include a contract that already contains an Attestor announcement and offeror parameters.
 
 The acceptor’s wallet will receive the offer requests initiated by the contract handling dApp. Following that, we hand the offer to the DlcService.
 
@@ -178,7 +178,7 @@ The acceptContract function of DlcService is invoked with a temporary contract i
 const accept = await dlcService.acceptContract(offeredContract.temporaryContractId);
 ```
 
-After acceptance, DlcService retrieves the stored contract from the repository, checks for sufficient utxos, collects them, creates a refund signature and constant ID, and gets all CETs signed by parties and Oracle(s), then it returns this extended contract to the Storage so that it can update the stored version accordingly.
+After acceptance, DlcService retrieves the stored contract from the repository, checks for sufficient utxos, collects them, creates a refund signature and constant ID, and gets all CETs signed by parties and Attestor(s), then it returns this extended contract to the Storage so that it can update the stored version accordingly.
 
 Step 3: Sign
 

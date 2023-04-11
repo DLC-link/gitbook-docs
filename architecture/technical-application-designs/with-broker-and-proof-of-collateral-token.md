@@ -24,7 +24,7 @@ When the borrower wants to access their Bitcoin again, they simply repay the fun
 
 1. Borrowing user browses to the Defi app and sets up the details of the desired loan.
 2. They are directed to a bridging application, which may be part of the Defi app, directly part of DLC.Link, or a 3rd party. Here they set up the details of the DLC and identify their Bitcoin collateral.
-3. The DLC is set up via the DLC.Link smart contracts and Bitcoin Oracles (TM).
+3. The DLC is set up via the DLC.Link smart contracts and Bitcoin Attestors.
 4. The user accepts the details of the DLC in their Bitcoin wallet.
 5. The Bitcoin is locked into the DLC.
 6. The bridging application from step 2 mints the **Proof of Collateral** tokens representing the collateral.
