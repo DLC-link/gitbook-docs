@@ -20,7 +20,7 @@ Through DLCs, we predefine the possible outcomes for the Bitcoin before the user
 
 The Bitcoin Attestors are operated decentrally by various distinct node operators. When creating a DLC, the participants are leveraging the Bitcoin Attestors to attest to the payout outcome indicated by the blockchain smart contract.&#x20;
 
-For security through abstraction, the attestors don't know what the outcome they're signing means, nor do they know who the participants are. Furthermore, multiple attestors are used, and the consensus among that subset is used for the signing, leveraging the power of decentralized security even further. Finally, if an attestor is seen to be acting badly (intentionally or not) they can be punished through a common _slashing_ operation.&#x20;
+For security through abstraction, the Attestors don't know what the outcome they're signing means, nor do they know who the participants are. Furthermore, multiple Attestors are used, and the consensus among that subset is used for the signing, leveraging the power of decentralized security even further. Finally, if an Attestor is seen to be acting badly (intentionally or not) they can be punished through a common _slashing_ operation.&#x20;
 
 Read more about Bitcoin Attestors here: [https://www.dlc.link/blog/what-is-a-bitcoin-oracle](https://www.dlc.link/blog/what-is-a-bitcoin-oracle)
 
@@ -54,7 +54,7 @@ We are developing a secure, reliable wallet service for enterprises and financia
 
 ### Attestor
 
-The Bitcoin Attestors make up a disjoint set of independent nodes running DLC attestor software. They are used to sign and attest to DLC outcomes. See the [above section](tech-stack.md#securing-bitcoin-oracles-and-dlcs) for more details.
+The Bitcoin Attestors make up a disjoint set of independent nodes running DLC Attestor software. They are used to sign and attest to DLC outcomes. See the [above section](tech-stack.md#securing-bitcoin-oracles-and-dlcs) for more details.
 
 ### Smart Contracts
 
