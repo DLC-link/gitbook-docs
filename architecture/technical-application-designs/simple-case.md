@@ -4,9 +4,9 @@
 
 At a high level, the most important parts of the DLC.Link technical systems architecture are the following:
 
-* The Bitcoin Attestors, which acts as the mediator by signing the outcome for the DLC participants, ([learn more about DLCs](../../additional-resources/discreet-log-contracts.md))
-* the smart contracts, from the application (defi, betting, escrow, etc) using DLCs, and the DLC.Link Management Contract,
-* and the wallets that participate in the DLC.&#x20;
+* The Bitcoin Attestors, which act as mediators by signing the outcome for the DLC participants, ([learn more about DLCs](../../additional-resources/discreet-log-contracts.md))
+* The smart contracts, from the application (defi, betting, escrow, etc) using DLCs, and the DLC.Link Management Contract
+* And the wallets that participate in the DLC
 
 The DLC.Link architecture can be understood more thoroughly through the example of the defi lending case.
 
