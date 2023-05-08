@@ -7,10 +7,10 @@
 
 ## Use Cases
 
-* [Collateralized Bitcoin NFT](use-cases/escrow-services.md)
-* [Borrowing with Self-Custodied Bitcoin](use-cases/arkadiko/README.md)
-  * [Repayment](use-cases/arkadiko/minting-usdb-and-liquidation.md)
-  * [Liquidation](use-cases/arkadiko/liquidation.md)
+* [Collateralized Bitcoin NFT](use-cases/bitcoin-backed-nft.md)
+* [Borrowing with Self-Custodied Bitcoin](use-cases/borrowing-with-self-custodied-btc/README.md)
+  * [Repayment](use-cases/borrowing-with-self-custodied-btc/minting-usdb-and-liquidation.md)
+  * [Liquidation](use-cases/borrowing-with-self-custodied-btc/liquidation.md)
 
 ## Architecture
 
