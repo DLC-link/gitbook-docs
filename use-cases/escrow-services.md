@@ -1,4 +1,8 @@
-# Minting a Collateralized Bitcoin NFT
+---
+description: ERC-721 NFT Representing Locked Bitcoin Collateral
+---
+
+# Collateralized Bitcoin NFT
 
 **Abstract:**
 
