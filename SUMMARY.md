@@ -7,10 +7,9 @@
 
 ## Use Cases
 
+* [Borrowing USDC against Bitcoin in Arcade.xyz](use-cases/borrowing-usdc-against-bitcoin-in-arcade.xyz.md)
 * [Collateralized Bitcoin NFT](use-cases/escrow-services.md)
-* [Borrowing with Self-Custodied Bitcoin](use-cases/arkadiko/README.md)
-  * [Repayment](use-cases/arkadiko/minting-usdb-and-liquidation.md)
-  * [Liquidation](use-cases/arkadiko/liquidation.md)
+* [Repayment and Liquidation](use-cases/borrowing-with-self-custodied-btc.md)
 
 ## Architecture
 
