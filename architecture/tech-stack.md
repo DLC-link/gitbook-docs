@@ -60,7 +60,7 @@ The Bitcoin Attestors make up a disjoint set of independent nodes running DLC At
 
 Smart contracts on decentralized blockchains provide the best, most secure and reliable way to manage secure applications, such as payment protocol. They are open source, decentralized, censorship resistant, and immutable.
 
-This is why we connected our Bitcoin Attestors, to blockchain dapps to provide the best digital currency with the best platforms for application development.
+This is why we connected our Bitcoin Attestors to blockchain dapps, to provide the best digital currency with the best platforms for application development.
 
 ### Listening Agent
 
