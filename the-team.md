@@ -16,7 +16,7 @@ description: >-
 
 ## Seena Foroutan
 
-[Seena](https://www.linkedin.com/in/seenaforoutan/) is a seasoned professional in the blockchain and cryptocurrency industry, with a proven track record of driving growth, establishing strategic partnerships, and enhancing market presence. With his previous roles as the Global Head of Go To Market, Defi & Enterprise at Chainlink and Global Head of Go To Market, Analytics & Cloud at Coinbase, Seena has consistently showcased expertise and leadership in the field.
+[Seena](https://www.linkedin.com/in/seenaforoutan/) is a sales leader who advises on building high-performing teams, forging strategic partnerships, and enhancing market presence. He previously served as the Global Head of Go To Market, Defi & Enterprise at Chainlink, where he delivered over $2 Billion in revenue. Prior to that, he served as Global Head of Go To Market, Analytics & Cloud at Coinbase, which he joined through their acquisition of Earn.com
 
 ## Rusty Mason
 
