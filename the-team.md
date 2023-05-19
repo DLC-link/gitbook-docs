@@ -16,7 +16,7 @@ description: >-
 
 ## Seena Foroutan
 
-[Seena](https://www.linkedin.com/in/seenaforoutan/) is a highly experienced professional in the blockchain and cryptocurrency industry. As the Global Head of Go To Market, Defi & Enterprise at Chainlink and previously as the Global Head of Go To Market, Analytics & Cloud at Coinbase, Seena has demonstrated expertise in driving growth, establishing strategic partnerships, and enhancing market presence in the industry.
+[Seena](https://www.linkedin.com/in/seenaforoutan/) is a seasoned professional in the blockchain and cryptocurrency industry, with a proven track record of driving growth, establishing strategic partnerships, and enhancing market presence. With his previous roles as the Global Head of Go To Market, Defi & Enterprise at Chainlink and Global Head of Go To Market, Analytics & Cloud at Coinbase, Seena has consistently showcased expertise and leadership in the field.
 
 ## Rusty Mason
 
@@ -24,4 +24,4 @@ description: >-
 
 ## Matt Bombard
 
-[Matt](https://www.linkedin.com/in/matthewbombard/) comes from a financial services background in technology audit. His undergraduate studies in quantitative finance and stochastic systems and optimization fuels his passion for blockchain technology, emerging DeFi challenges and all types of financial derivatives.
+[Matt](https://www.linkedin.com/in/matthewbombard/) is a highly accomplished professional with experience in technology auditing and data science. With a background in quantitative finance and stochastic systems, he has successfully led regulatory projects and played a pivotal role in reshaping surveillance models at Goldman Sachs and Scotiabank.
