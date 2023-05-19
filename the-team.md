@@ -1,7 +1,7 @@
 ---
 description: >-
-  We are not strangers on the internet, but a skilled team working to build a
-  critical piece for the future of Bitcoin!
+  We are a highly skilled team of industry experts, collectively working towards
+  building a pivotal solution for the future of Bitcoin.
 ---
 
 # The Team
