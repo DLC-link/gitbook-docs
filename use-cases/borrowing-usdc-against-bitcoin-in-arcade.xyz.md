@@ -1,5 +1,5 @@
 ---
-description: Our Integration with Arcade enables non-custodial borrowing USDC on Bitcoin
+description: Our Integration with Arcade enables non-custodial borrowing of USDC on Bitcoin
 ---
 
 # Borrowing USDC against Bitcoin in Arcade.xyz
