@@ -12,7 +12,7 @@ The DLC.Link architecture can be understood more thoroughly through the example 
 
 ### Open Loan Flow Example
 
-<figure><img src="../../.gitbook/assets/DLC.Link_OpenLoan_TechnicalFlow_NewA5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_OpenLoan_TechnicalFlow_NewA5 (1).png" alt=""><figcaption></figcaption></figure>
 
 In the above example, a user wants to use native, self-custodial bitcoin as collateral for a stable-coin loan on a blockchain such as Ethereum, Stacks, or many others.&#x20;
 
@@ -24,7 +24,7 @@ In the above example, a user wants to use native, self-custodial bitcoin as coll
 
 ### Close Loan via Repayment Flow
 
-<figure><img src="../../.gitbook/assets/DLC.Link_CloseLoan_TechnicalFlow_NewA.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_CloseLoan_TechnicalFlow_NewA (1).png" alt=""><figcaption></figcaption></figure>
 
 Above a user wants to repay their stable-coin loan and regain access to their bitcoin collateral.&#x20;
 
@@ -39,4 +39,4 @@ Above a user wants to repay their stable-coin loan and regain access to their bi
 
 When the value of a user's collateral drops below a certain threshold, there can be a liquidation event. Here, a **liquidator** identifies the undercollateralized loan and starts a process to repay the loaned asset and 'buy out' the remaining collateral at a discount, thus keeping the value of the loaned asset stable.
 
-<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow.png" alt=""><figcaption></figcaption></figure>

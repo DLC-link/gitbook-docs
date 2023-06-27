@@ -1,8 +1,9 @@
 # Discreet Log Contracts
 
 Please see our associated blog posts which discuss DLCs in more details:\
-[https://www.dlc.link/blog/what-are-dlcs-and-dlc-oracles](https://www.dlc.link/blog/what-are-dlcs-and-dlc-oracles)\
-[https://www.dlc.link/blog/what-is-a-bitcoin-oracle](https://www.dlc.link/blog/what-is-a-bitcoin-oracle)
+[https://www.dlc.link/blog/what-are-dlcs-and-dlc-attesters](https://www.dlc.link/blog/what-are-dlcs-and-dlc-attesters)\
+[https://www.dlc.link/blog/what-is-a-bitcoin-attester](https://www.dlc.link/blog/what-is-a-bitcoin-attester)\
+
 
 <figure><img src="../.gitbook/assets/DLC.Link_WhatAreDLCs_B.png" alt=""><figcaption></figcaption></figure>
 

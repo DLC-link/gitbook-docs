@@ -10,7 +10,7 @@ If the user were to repay the loan, the **Broker** ends up not participating in 
 \
 However, in the liquidation case, the **Broker** will be collecting the collateral, and thus prior to that is responsible for suring-up the loaned asset. In the example below, the **Broker** pays USDC stablecoin to cover the loan, and once the DLC is signed, the Bitcoin collateral is sent to the **Broker** to cover their costs plus fees.
 
-<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow.png" alt=""><figcaption></figcaption></figure>
 
 ### Isolated Liquidity Pool - Liquidation Flow
 
@@ -20,7 +20,7 @@ The term Isolated Liquidity Pool refers to a Smart Contract that allows for mult
 
 See below for an example setup of a **Broker** supported Bitcoin-collateral loan with an isolated liquidity pool.
 
-<figure><img src="../../.gitbook/assets/DLC.Link_IPLLiquidationFlow (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_IPLLiquidationFlow.png" alt=""><figcaption></figcaption></figure>
 
 ### Detailed View of Propine Isolated Liquidity Pool
 
