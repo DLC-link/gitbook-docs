@@ -8,7 +8,6 @@
 ## Use Cases
 
 * [Borrowing USDC against Bitcoin in Arcade.xyz](use-cases/borrowing-usdc-against-bitcoin-in-arcade.xyz.md)
-* [Collateralized Bitcoin NFT](use-cases/escrow-services.md)
 * [Repayment and Liquidation](use-cases/borrowing-with-self-custodied-btc.md)
 
 ## Architecture
@@ -18,6 +17,7 @@
   * [Stacks / Clarity](architecture/installation-and-setup/stacks-clarity.md)
   * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
   * [Bitcoin Attestors](architecture/installation-and-setup/bitcoin-oracle-nodes.md)
+  * [Collateralized Bitcoin NFT](architecture/installation-and-setup/collateralized-bitcoin-nft.md)
 * [Tech Stack and Architecture Overview](architecture/tech-stack.md)
 * [Technical Application Designs](architecture/technical-application-designs/README.md)
   * [DeFi Loan Example](architecture/technical-application-designs/simple-case.md)
