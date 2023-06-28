@@ -17,7 +17,7 @@
   * [Stacks / Clarity](architecture/installation-and-setup/stacks-clarity.md)
   * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
   * [Bitcoin Attestors](architecture/installation-and-setup/bitcoin-oracle-nodes.md)
-  * [Collateralized Bitcoin NFT](architecture/installation-and-setup/collateralized-bitcoin-nft.md)
+  * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
 * [Tech Stack and Architecture Overview](architecture/tech-stack.md)
 * [Technical Application Designs](architecture/technical-application-designs/README.md)
   * [DeFi Loan Example](architecture/technical-application-designs/simple-case.md)
