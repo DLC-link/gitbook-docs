@@ -4,7 +4,7 @@ description: Blockchains, Applications and Teams building with DLC.Link
 
 # Partnerships
 
-## Chainlink Grant
+## Chainlink
 
 [Chainlink](https://chain.link/) is the predominant industry standard to securely connect smart contracts with off-chain data and services. DLC.Link was awarded a Chainlink Community Grant to develop open-source infrastructure for bridging data from Chainlink oracles to DLCs on the Bitcoin network.
 
@@ -16,6 +16,8 @@ description: Blockchains, Applications and Teams building with DLC.Link
 
 {% embed url="https://www.xverse.app/blog/4-ways-dlc-links-bitcoin-oracles-enable-bitcoin-defi" %}
 
-\
+## Hiro Wallet
+
+[Hiro](https://wallet.hiro.so/) is the predominant wallet in use in the Stacks ecosystem. Hiro supports BTC, STX, Ordinals and is soon adding LN. Over 100,000 people use Hiro to connect to applications created by Stacks and Trust Machines.\
 
 
