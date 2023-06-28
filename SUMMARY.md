@@ -21,8 +21,8 @@
   * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
 * [Example Application Designs](architecture/technical-application-designs/README.md)
   * [DeFi Loan Example](architecture/technical-application-designs/simple-case.md)
-  * [Liquidation Flows](architecture/technical-application-designs/with-broker.md)
-  * [With Liquidator and Proof of Collateral NFT](architecture/technical-application-designs/with-broker-and-proof-of-collateral-token.md)
+  * [Liquidation Flows](architecture/technical-application-designs/liquidation-flows.md)
+  * [With Liquidator and Proof of Collateral NFT](architecture/technical-application-designs/with-liquidator-and-proof-of-collateral-nft.md)
 * [Code Repositories](architecture/code-repository.md)
 
 ***
