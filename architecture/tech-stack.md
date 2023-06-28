@@ -56,14 +56,11 @@ We are developing a secure, reliable wallet service for enterprises and financia
 
 The Bitcoin Attestors make up a disjoint set of independent nodes running DLC Attestor software. They are used to sign and attest to DLC outcomes. See the [above section](tech-stack.md#securing-bitcoin-oracles-and-dlcs) for more details.
 
+The Attestor also fulfills a listening function, whereby it communicates with the create and payout steps with smart contracts. There is no application logic in the listener, and in order to ensure safety, a back-checking entity verifies the results of the Bitcoin Attestors on-chain. This guarantees that the Attestors signed correct values and ensures that there was no manipulation anywhere along the path.
+
 ### Smart Contracts
 
 Smart contracts on decentralized blockchains provide the best, most secure and reliable way to manage secure applications, such as payment protocol. They are open source, decentralized, censorship resistant, and immutable.
 
 This is why we connected our Bitcoin Attestors to blockchain dapps, to provide the best digital currency with the best platforms for application development.
 
-### Listening Agent
-
-In order to communicate between our Bitcoin Attestors and the smart contracts using DLCs, the DLC _listener_ is used. This tool passes the create and payout steps of the contracts between the smart contracts and the Bitcoin Attestors.&#x20;
-
-There is essentially no logic in the listener, and in order to ensure safety, we will verify the results of the Bitcoin Attestors on chain, guaranteeing that the Attestors signed the correct values and there was no manipulation anywhere along the path.

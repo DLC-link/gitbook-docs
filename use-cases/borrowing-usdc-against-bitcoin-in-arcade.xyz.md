@@ -14,7 +14,7 @@ With the Bitcoin-backed NFT in their Ethereum wallet, users can list it on the A
 
 #### Video Demo&#x20;
 
-In a video demo, Robert from DLC.Link walks through the process of using native Bitcoin as collateral for a stablecoin loan using Arcade.xyz and DLC.Link's NFT broker site. He demonstrates creating a vault on Ethereum using MetaMask, locking the Bitcoin, minting the NFT, and listing the NFT on Arcade.xyz to borrow against it. The demo also explains closing the vault and getting the Bitcoin back, as well as transferring or liquidating a loan on Arcade.
+In a video demo, Robert from DLC.Link walks through the process of using native Bitcoin as collateral for a stablecoin loan using Arcade.xyz and DLC.Link's NFT liquidator. He demonstrates creating a vault on Ethereum using MetaMask, locking the Bitcoin, minting the NFT, and listing the NFT on Arcade.xyz to borrow against it. The demo also explains closing the vault and getting the Bitcoin back, as well as transferring or liquidating a loan on Arcade.
 
 {% embed url="https://www.youtube.com/watch?t=12s&v=MsjzQwaQVjo" %}
 
