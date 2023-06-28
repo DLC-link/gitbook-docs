@@ -20,7 +20,7 @@
   * [Bitcoin Attestors](architecture/installation-and-setup/bitcoin-oracle-nodes.md)
 * [Tech Stack and Architecture Overview](architecture/tech-stack.md)
 * [Technical Application Designs](architecture/technical-application-designs/README.md)
-  * [Simple Case](architecture/technical-application-designs/simple-case.md)
+  * [DeFi Loan Example](architecture/technical-application-designs/simple-case.md)
   * [Liquidation Flows](architecture/technical-application-designs/with-broker.md)
   * [With Liquidator and Proof of Collateral NFT](architecture/technical-application-designs/with-broker-and-proof-of-collateral-token.md)
 * [Code Repositories](architecture/code-repository.md)

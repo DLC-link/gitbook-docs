@@ -35,6 +35,6 @@ When the token holder wants to redeem the Bitcoin collateral, they need to use a
 1. 3rd party liquidator(s) send payment to the DeFi protocol to cover the loan.
 2. The Proof of Collateral tokens are sent from the defi protocol to the liquidator(s).
 3. The PoC tokens are burned, which is picked up by the DLC.Link smart contract.
-4. The DLC is closed with the outcome associated with the liquidation event. Specifically, what % of collateral should go to the liquidator(s), and what % should go to the original borrower.
+4. The DLC is closed with the outcome associated with the liquidation event.
 5. The DLC is closed, releasing the BTC to the liquidator and the borrower.
 6. The liquidator pays out the liquidator(s) depending on their pre-negotiated terms.
