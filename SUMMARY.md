@@ -12,14 +12,14 @@
 
 ## Architecture
 
+* [Architecture Overview](architecture/tech-stack.md)
 * [Installation and Setup](architecture/installation-and-setup.md)
   * [Solidity](architecture/installation-and-setup/solidity.md)
   * [Stacks / Clarity](architecture/installation-and-setup/stacks-clarity.md)
   * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
   * [Bitcoin Attestors](architecture/installation-and-setup/bitcoin-oracle-nodes.md)
   * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
-* [Tech Stack and Architecture Overview](architecture/tech-stack.md)
-* [Technical Application Designs](architecture/technical-application-designs/README.md)
+* [Example Application Designs](architecture/technical-application-designs/README.md)
   * [DeFi Loan Example](architecture/technical-application-designs/simple-case.md)
   * [Liquidation Flows](architecture/technical-application-designs/with-broker.md)
   * [With Liquidator and Proof of Collateral NFT](architecture/technical-application-designs/with-broker-and-proof-of-collateral-token.md)
