@@ -8,7 +8,7 @@ If the user repays the loan, collateral is returned to the borrower and the liqu
 \
 In the case of a default, the Bitcoin moves to the liquidator. Working with an exchange or OTC trading desk, the liquidator swaps the Bitcoin for wBTC, USDC or another asset. The liquidator sends the funds to the lender, less a processing fee.
 
-<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Isolated Liquidity Pool
 
@@ -18,4 +18,4 @@ The term Isolated Liquidity Pool refers to a smart contract that allows for mult
 
 See below for an example setup of a liquidator supported Bitcoin-collateral loan with an isolated liquidity pool.
 
-<figure><img src="../../.gitbook/assets/DLC.Link_IPLLiquidationFlow.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_IPLLiquidationFlow (3).png" alt=""><figcaption></figcaption></figure>

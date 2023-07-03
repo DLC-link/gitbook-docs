@@ -13,7 +13,7 @@ As an example of an implementation, consider a DeFi lender on Ethereum that loan
 
 ### Open Loan Flow Example
 
-<figure><img src="../../.gitbook/assets/DLC.Link_OpenLoan_TechnicalFlow_NewA5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_OpenLoan_TechnicalFlow_NewA5 (2).png" alt=""><figcaption></figcaption></figure>
 
 1. The user browses to the DeFi application's webpage and fills in the details of the loan they want to take, using BTC as collateral.
 2. The DeFi application updates their smart contract on the blockchain to setup a new collateralized loan and calls to the DLC.Link smart contract to set up the Bitcoin DLC contract on the Bitcoin Attestors.
