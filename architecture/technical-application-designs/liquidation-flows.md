@@ -18,4 +18,4 @@ The term Isolated Liquidity Pool refers to a smart contract that allows for mult
 
 See below for an example setup of a liquidator supported Bitcoin-collateral loan with an isolated liquidity pool.
 
-<figure><img src="../../.gitbook/assets/DLC.Link_IPLLiquidationFlow (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_IPLLiquidationFlow.png" alt=""><figcaption></figcaption></figure>
