@@ -1,4 +1,4 @@
-# Tech Stack and Architecture Overview
+# Architecture Overview
 
 ## Philosophy - Secure, Resilient, Trustless
 
@@ -22,7 +22,7 @@ The Bitcoin Attestors are operated decentrally by various distinct node operator
 
 For security through abstraction, the Attestors don't know what the outcome they're signing means, nor do they know who the participants are. Furthermore, multiple Attestors are used, and the consensus among that subset is used for the signing, leveraging the power of decentralized security even further. Finally, if an Attestor is seen to be acting badly (intentionally or not) they can be punished through a common _slashing_ operation.&#x20;
 
-Read more about Bitcoin Attestors here: [https://www.dlc.link/blog/what-is-a-bitcoin-oracle](https://www.dlc.link/blog/what-is-a-bitcoin-oracle)
+Read more about Bitcoin Attestors here: [https://www.dlc.link/blog/what-is-a-bitcoin-attestor](https://www.dlc.link/blog/what-is-a-bitcoin-attestor)
 
 ## Supported Blockchains
 
