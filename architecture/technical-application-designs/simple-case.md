@@ -23,7 +23,7 @@ As an example of an implementation, consider a DeFi lender on Ethereum that loan
 
 ### Close Loan via Repayment
 
-<figure><img src="../../.gitbook/assets/DLC.Link_CloseLoan_TechnicalFlow_NewA (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/DLC.Link_CloseLoan_TechnicalFlow_NewA-80.jpg" alt=""><figcaption></figcaption></figure>
 
 Above a user wants to repay their stable-coin loan and regain access to their bitcoin collateral.&#x20;
 
