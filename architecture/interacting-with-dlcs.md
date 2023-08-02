@@ -1,154 +1,49 @@
-# Interacting with DLCs
+# Interacting with Bitcoin Contracts in the Hiro Wallet
 
-## Solidity / Clarity Smart Contracts
+## Overview
+This documentation will show dApp developers how to access Bitcoin Contrcts in their applications, via the Hiro wallet.
 
-To enable the utilization of DLCs and enable users to transact with native bitcoin directly, it is essential to acquaint yourself with either DLC.Link's Clarity or
-Solidity contract.
+Enabling the interfacing of Bitcoin Contracts via Hiro wallet requires three steps:
 
-- Solidity: https://github.com/DLC-link/dlc-solidity
-- Clarity: https://github.com/DLC-link/dlc-clarity
+  1. Integrate your smart contract with the *DLC Manager* smart contract
+  2. Run a Router Wallet
+  3. Configure your web app to support Bitcoin Contracts, which has two parts:
+     1. Configure your web app to interact with the Router wallet
+     2. And pop up the Hiro wallet's Bitcoin Contract interface
 
-To interact with our DLC Manager contract, you need to create your own smart contract that communicates with the DLC Manager contract. You can write this contract using either the Solidity language for deployment on the Ethereum blockchain or the Clarity language for deployment on the Stacks blockchain. Once you deploy your contract, please share it's address with our developers. This way, we can whitelist it and allow it to interact with our DLC Manager contract.
+See the below sections for more details on each step.
+
+*Note* Bitcoin Contracts are powered by the underlying technology known as DLCs (Discreet Log Contracts) and sometimes the names are used interchangibly. Learn more about DLCs here (http://www.dlc.link)
+
+## Step 1. Solidity / Clarity Smart Contract Integration
+
+To enable the use of DLCs, which let users transact with native bitcoin directly, it is essential to acquaint yourself with either DLC.Link's Clarity or
+Solidity contract. These are referred to as the DLC Manager contracts. Calling into the DLC Manager contract happens directly from your smart contract. See the following instructions for more details:
+
+- Solidity: https://github.com/DLC-link/dlc-solidity/tree/attestor-manager ----- Link to the docs page
+- Clarity: https://github.com/DLC-link/dlc-clarity/tree/attestor-manager ----- Link to the docs page
+
+### Registering Your Smart Contract
+As the DLC.Link product is currently in the beta-testing phase, you must first register your contract with the DLC.Link development team in our Discord server.
+Once you deploy your contract, please share it's address with the DLC.Link developers to have it whitelisted. Please contact DLC.Link on our Discord server.
 
 ## Router Wallet
 
-To enable DLC creation as a counterparty, you have two options: either run your own Router Wallet or connect to an existing one. The Router Wallet plays a crucial role as it communicates with both the dlc-manager and the attestors. It offers an API that allows you to create and manage transactions. When you have your own Router Wallet set up, other users can fetch offers from your wallet and accept them.
+<!-- what is a router wallet? What is a counter-party? -->
 
-Once you have set up your Router Wallet, please share its address with our developers. By doing so, we can whitelist it, granting permission for it to interact with our DLC Manager contract.
+To enable DLC creation, there needs to be a counter-party bitcoin wallet in the Bitcoin Contract. The Router Wallet plays a crucial role as it communicates with both the dlc-manager and the attestors.
+ <!-- It offers an API that allows you to create and manage transactions.  //What does this mean? what kinds of transactions? it's the first time you used the term transactions, people won't know what it is.-->
+ When you have your own Router Wallet set up, other users can fetch offers from your wallet and accept them.
+ <!-- other users? you mean the protocol's web-app? -->
 
-### Integrating smart contract functionality into your dApp
-
-To interact with the smart contracts (Solidity or Clarity) in you dApp, you should import and install the corresponding package(s) into your project.
-For Solidity, you should import the 'ethers.js' or 'web3.js' package, and for Clarity, you should import the 'stacks.js' package.
-
-- ethers.js: https://docs.ethers.org/v5/
-- web3.js: https://web3js.readthedocs.io/en/v1.10.0/
-- stacks.js: https://www.hiro.so/stacks-js
-
-  After installing the necessary package(s), the next is to setup a function that will enable the user's wallet to interact with the dApp, and the smart contract(s) within it. This step should also set the desired network.
-
-#### Connect Wallet | Set Provider and Contracts / Solidity Example
-
-```jsx
-<li>
-  <button onClick={() => connectMetaMaskAccount(EthereumNetworks[0].id)}>Mainnet</button>
-  <button onClick={() => connectMetaMaskAccount(EthereumNetworks[1].id)}>Goerli</button>
-  <button onClick={() => connectMetaMaskAccount(EthereumNetworks[2].id)}>Sepolia</button>
-</li>
-```
-
-```ts
-import { ethers } from 'ethers';
-
-const EthereumNetworks = {
-  Mainnet: {
-    id: '1',
-    protocolContractAddress: env.MAINNET_PROTOCOL_CONTRACT_ADDRESS,
-    usdcContractAddress: env.MAINNET_USDC_ADDRESS,
-  },
-  Goerli: {
-    id: '5',
-    protocolContractAddress: env.GOERLI_PROTOCOL_CONTRACT_ADDRESS,
-    usdcContractAddress: env.GOERLI_USDC_ADDRESS,
-  },
-  Sepolia: {
-    id: '11155111',
-    protocolContractAddress: env.SEPOLIA_PROTOCOL_CONTRACT_ADDRESS,
-    usdcContractAddress: env.SEPOLIA_USDC_ADDRESS,
-  },
-};
-
-const [currentAccount, setCurrentAccount] = useState();
-const [currentNetwork, setCurrentNetwork] = useState();
-const [protocolContract, setProtocolContract] = useState();
-const [usdcContract, setUsdcContract] = useState();
-
-async function connectMetaMaskAccount(blockchain: string): Promise<void> {
-  const { ethereum } = window;
-
-  if (!ethereum) return alert('Install MetaMask!');
-
-  const metamaskAccounts = await ethereum.request({
-    method: 'eth_requestAccounts',
-  });
-
-  setCurrentAccount(metamaskAccounts[0]);
-  setCurrentNetwork(blockchain);
-
-  await setEthereumProvider();
-}
-```
-
-To set the Ethereum provider and contracts, you should have the contracts' ABI and addresses, which you can get from the smart contract's repository.
-
-```ts
-async function setEthereumProvider(): Promise<void> {
-  const { protocolContractAddress, usdcContractAddress } = EthereumNetworks[currentNetwork];
-  const { ethereum } = window;
-  const provider = new ethers.providers.Web3Provider(ethereum);
-  const signer = provider.getSigner();
-  const { chainId } = await provider.getNetwork();
-
-  if (chainId !== currentNetwork) {
-    await changeEthereumNetwork();
-  }
-  const currentProtocolContract = new ethers.Contract(protocolContractAddress, protocolContractABI, signer);
-  const currentUsdcContract = new ethers.Contract(usdcContractAddress, usdcABI, signer);
-
-  setProtocolContract(currentProtocolContract);
-  setUsdcContract(currentUsdcContract);
-}
-```
-
-Make sure to wrap the functions in a try/catch block to handle errors.
-
-To utilize the smart contract functions, you should store the user's address, the network, and the contracts in the state or in a store, and then use them to call the functions.
-
-#### Create Vault / Solidity Example
-
-To create a vault on Ethereum, you should utilize a function like the example below.
-
-Our protocol contract has a function called 'setupLoan' that takes the following parameters:
-
-BTCDeposit: The amount of BTC the user is willing to deposit.
-liquidationRatio: The ratio at which the vault will be liquidated.
-liquidationFee: The fee that will be paid to the liquidator.
-attestorCount: The number of attestors that will be used to create a DLC.
-
-Note that you should should unshift the decimal point of the liquidationRatio and liquidationFee by 2 places, and shift the BTCDeposit by 8 places.
-
-```ts
-async function createVault(
-  BTCDeposit: number,
-  liquidationRatio: number,
-  liquidationFee: number,
-  attestorCount: number
-) {
-  protocolContract.setupLoan(BTCDeposit, liquidationRatio, liquidationFee, attestorCount);
-}
-```
-
-This function will ping the DLC Manager contract, and create a vault on the Ethereum blockchain.
-
-After the vault is created, and the transaction is confirmed. The vault's status will be set to 'Ready', and the user will be able to receive and accept offers.
-
-#### Close Vault / Solidity Example
-
-To close a vault on Ethereum, you should utilize a function like the example below.
-
-Our protocol contract has a function called 'closeLoan' that takes the UUID of the vault as a parameter.
-
-First it is necessary to fetch the vault by the UUID, and then pass the vault's ID to the 'closeLoan' function.
-
-```ts
-async function closeVault(vaultUUID: string) {
-  const loan = await getEthereumLoanByUUID(UUID);
-  protocolContractETH.closeLoan(parseInt(loan.id._hex));
-}
-```
+Once you have set up your Router Wallet, please share its address with the DLC.Link developers, as this also needs to be whitelisted during beta-testing. By doing so it will be granted permission for it to interact with our DLC Manager contract.
 
 ## Fetching Bitcoin Contract Offer from the Router Wallet
+OK, now it's time to configure your web app!
 
+DLC offer? accept?
+
+<!-- what is a vault? -->
 After a Vault has been created on Ethereum, the UUID can be used to fetch a Bitcoin Contract Offer from the Router Wallet.
 
 To receive a Bitcoin Contract Offer from the Router Wallet, you should utilize a function like the example below:
@@ -197,7 +92,7 @@ The function above will return a Bitcoin Contract Offer in string format, which 
 
 ## Wallet API
 
-To accept the received offer and engage with a Bitcoin wallet, you need to communicate with the wallet's API in the following manner:
+To accept the received offer and engage with a Hiro wallet, you need to communicate with the Hiro wallet's API in the following manner:
 
 ```ts
 interface CounterPartyWalletDetails {
@@ -214,7 +109,7 @@ interface BitcoinContractRequestParams {
 ```
 
 Ensure that all the necessary fields are JSON-stringified before utilizing them as param, as the API operates using JSON format.
-
+<!-- This part seems very important, but is not clear at all. What are the two above types, the CounterPartyWalletDetails and the BitcoinContractRequestParams, where are they used? What are the 'params' below?-->
 ```ts
 const urlParams: BitcoinContractRequestParams = { ...params };
 
