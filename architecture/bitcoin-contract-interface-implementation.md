@@ -3,7 +3,7 @@
 To activate DLC-related features in your Bitcoin wallet application, it's necessary to integrate and install the 'dlc-wasm-wallet' package. This is a fundamental step
 towards interacting with Bitcoin Contracts.
 
-## Instantiaton
+## Instantiation
 
 ```ts
 import { JsDLCInterface } from 'dlc-wasm-wallet';
