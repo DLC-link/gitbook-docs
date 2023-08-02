@@ -1,6 +1,4 @@
-# Sign DLC contracts
-
-The Bitcoin Contract Interface enables users to receive, accept, and sign DLCs (Discreet Log Contracts) offered by another party, all within the user's wallet.
+# Interacting with DLCs
 
 ## Solidity / Clarity Smart Contracts
 
