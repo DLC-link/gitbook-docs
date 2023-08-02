@@ -6,24 +6,18 @@ description: Links to the various github repos for DLC.Link
 
 This documentation site, for helping us add details and make corrections - [DLC.Link Docs](https://github.com/DLC-link/gitbook-docs)
 
-Monorepo for all Stacks chain smart contracts - [stacks-contracts-all](https://github.com/DLC-link/stacks-contracts-all)
+Solidity smart contracts for EVM compatible blockchains - [dlc-solidity](https://github.com/DLC-link/dlc-solidity)
 
-Solidity smart contracts for EVM compatible blockchains - [dlc-solidity-smart-contract](https://github.com/DLC-link/dlc-solidity-smart-contract)
+Monorepo for all Stacks chain smart contracts written in Clarity - [dlc-clarity](https://github.com/DLC-link/dlc-clarity)
 
-Library for managing DLCs in Rust [rust-dlc](https://github.com/DLC-link/rust-dlc)
+A Bitcoin (DLC) Attestor to be easily launched by various node operators to create the decentralized network of Attestors - [Bitcoin Attestor](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/attestor)
 
-A Bitcoin (DLC) Oracle to be easily launched by various node operators to create the decentralized network of Oracles - [sibyls](https://github.com/DLC-link/sibyls)
+Protocol BTC Wallet supporting DLCs as a Rust service [Protocol Wallet](https://github.com/DLC-link/dlc-stack/tree/master/wallet)
 
-DLC Support in TypeScript/WASM to easily let third-party web/react-native wallets support DLCs - [prototype-wallet-dlc-lib](https://github.com/DLC-link/prototype-wallet-dlc-lib)&#x20;
+Javascript agent for listening to events on the Blockchain and communicating to the Attestors and other backend services (private currently) [dlc-observer](https://github.com/DLC-link/dlc-observer)
 
-Javascript agent for listening to events on the Blockchain and communicating to the Oracles and other backend services (private) [dlc-observer](https://github.com/DLC-link/dlc-observer)
-
-Dockerized stack to enable easy deploying of Oracles and DLC protocol wallet for easy network adopt [docker-dlc-stack](https://github.com/DLC-link/docker-dlc-stack)
-
-Prototype BTC wallet with DLC support Chrome extension (private currently) - [prototype-wallet-extension](https://github.com/DLC-link/prototype-wallet-extension)&#x20;
-
-Protocol BTC Wallet supporting DLCs as a Rust service (currently private) - [prototype-wallet-backend](https://github.com/DLC-link/prototype-wallet-backend)
+Open source library for managing DLCs in Rust [rust-dlc](https://github.com/DLC-link/rust-dlc)
 
 {% hint style="warning" %}
-These repos are beta versions, and are not guaranteed ready for production use.&#x20;
+These repos are beta versions and are not guaranteed for production use.&#x20;
 {% endhint %}

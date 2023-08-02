@@ -7,21 +7,22 @@
 
 ## Use Cases
 
-* [Escrow Services](use-cases/escrow-services.md)
-* [Arkadiko Defi Loans](use-cases/arkadiko/README.md)
-  * [Minting USDB and Repayment](use-cases/arkadiko/minting-usdb-and-repayment.md)
-  * [Minting USDB and Liquidation](use-cases/arkadiko/minting-usdb-and-liquidation.md)
-* [Syvita Guild Decentralized Mining Rewards](use-cases/syvita-guild/README.md)
-  * [Non-Custodial Mining Pool](use-cases/syvita-guild/non-custodial-mining-pool.md)
+* [Borrowing USDC against Bitcoin in Arcade.xyz](use-cases/borrowing-usdc-against-bitcoin-in-arcade.xyz.md)
+* [Repayment and Liquidation](use-cases/borrowing-with-self-custodied-btc.md)
 
 ## Architecture
 
+* [Architecture Overview](architecture/tech-stack.md)
 * [Installation and Setup](architecture/installation-and-setup.md)
-* [Tech Stack and Architecture Overview](architecture/tech-stack.md)
-* [Technical Application Designs](architecture/technical-application-designs/README.md)
-  * [Simple Case](architecture/technical-application-designs/simple-case.md)
-  * [With Broker](architecture/technical-application-designs/with-broker.md)
-  * [With Broker and Proof of Collateral Token](architecture/technical-application-designs/with-broker-and-proof-of-collateral-token.md)
+  * [Solidity](architecture/installation-and-setup/solidity.md)
+  * [Stacks / Clarity](architecture/installation-and-setup/stacks-clarity.md)
+  * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
+  * [Bitcoin Attestors](architecture/installation-and-setup/bitcoin-oracle-nodes.md)
+  * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
+* [Example Application Designs](architecture/technical-application-designs/README.md)
+  * [DeFi Loan Example](architecture/technical-application-designs/simple-case.md)
+  * [Liquidation Flows](architecture/technical-application-designs/liquidation-flows.md)
+  * [With Liquidator and Proof of Collateral NFT](architecture/technical-application-designs/with-liquidator-and-proof-of-collateral-nft.md)
 * [Code Repositories](architecture/code-repository.md)
 
 ***
