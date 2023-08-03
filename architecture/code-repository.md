@@ -1,5 +1,5 @@
 ---
-description: Links to the various github repos for DLC.Link
+description: GitHub repos for DLC.Link
 ---
 
 # Code Repositories
