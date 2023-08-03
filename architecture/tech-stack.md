@@ -1,38 +1,32 @@
 # Architecture Overview
 
-## Philosophy - Secure, Resilient, Trustless
+## Philosophy
 
-Bitcoin’s spectacular growth has turned it into a global phenomenon. Its decentralized model, predictable monetary policy and self-sovereign principles have made it an effective store of value. Today, Bitcoin is probably the best savings account in the world. When kept in self-custody in a user’s own wallet, it is not subject to adverse government actions, hacks or bankruptcies that plague other banks and financial institutions. Bitcoin however does not have a smart contract interface, and it is practically impossible to build robust financial applications with Bitcoin script. The tight security and hack-resistance of Bitcoin severely limit its programmability.&#x20;
+Bitcoin has become a global phenomenon and a secure store of value, free from government interference and institutional risks. Despite its advantages, Bitcoin's security measures limit its programmability, lacking a smart contract interface for robust financial applications.
 
-Meanwhile, Ethereum and other chains have rapidly moved to fill this gap. Ethereum features a robust smart contract platform that can be used to create sophisticated financial applications. Its rise in popularity, driven by a central founding team and fueled by venture capital funding, has led to both tremendous growth and rampant speculation. In the eyes of Bitcoiners, Decentralized Finance (DeFi) is essentially a high-risk casino. Similar to the allure of crowdfunding, individuals have the ability to speculate and gamble on over 20,000 available tokens. This trading activity often fills Bitcoiners with dread, especially when smart contract hacks and custodian failures lead to greater volatility and hurts public perception.
+Ethereum and other chains have filled this gap with their robust smart contract platforms, driving tremendous growth but also leading to speculation and perceived risks. In the Bitcoin community, Decentralized Finance (DeFi) can be seen as a high-risk venture, associated with volatility and public perception issues.
 
-Instead of attempting to rebuild financial applications and currencies on top of Bitcoin, it makes more logical sense to use Bitcoin as a stable reserve layer within future decentralized financial systems that are being built on other platforms. It's become clear that entrusting centralized entities to safeguard massive reserve assets is overly risky, so it makes sense to utilize Bitcoin as a store of value that secures the sophisticated applications running on various blockchains on top.
+We believe that Bitcoin is ideal as a settlement layer, to be used within decentralized financial systems on other platforms. Using Bitcoin as a store of value that secures sophisticated applications across various blockchains reduces risks and aligns with a decentralized vision.
 
 Please read more about our philosophy here: [https://www.dlc.link/blog/introducing-the-bitcoin-plus-mentality](https://www.dlc.link/blog/introducing-the-bitcoin-plus-mentality)
 
-## How Bitcoin Attestors and DLCs Achieve This
+## How DLCs Achieve This Vision
 
-We believe in this future, and are designing our infrastructure and Bitcoin Attestors to support this goal while following the designs and vision of blockchains and decentralized applications.
-
-Through DLCs, we predefine the possible outcomes for the Bitcoin before the user / protocol agrees to use it as collateral. With this, and by running the application logic on a full-features blockchain which supports smart contracts, we drastically reduce the surface-area where errors or malicious intent can occur. DLCs are designed so that the smart contracts and Bitcoin Attestors know as little about the details of the bitcoin payments and wallets as possible.&#x20;
+Discreet Log Contracts (DLCs) create a secure and decentralized framework for financial transactions. By predefining possible outcomes for Bitcoin before its use as collateral and running the application logic on a blockchain that supports smart contracts, DLCs significantly minimize the potential for errors or malicious acts. This structure ensures that the details of Bitcoin payments and wallets are kept minimal, aligning with the principles of decentralization. Furthermore, the use of Bitcoin Attestors in a consensus-based, abstract manner adds another layer of security, leveraging the power of decentralized security while maintaining integrity and trust in the system.
 
 ### Securing Bitcoin Attestors and DLCs
 
-The Bitcoin Attestors are operated decentrally by various distinct node operators. When creating a DLC, the participants are leveraging the Bitcoin Attestors to attest to the payout outcome indicated by the blockchain smart contract.&#x20;
-
-For security through abstraction, the Attestors don't know what the outcome they're signing means, nor do they know who the participants are. Furthermore, multiple Attestors are used, and the consensus among that subset is used for the signing, leveraging the power of decentralized security even further. Finally, if an Attestor is seen to be acting badly (intentionally or not) they can be punished through a common _slashing_ operation.&#x20;
+Bitcoin Attestors, operated by various independent node operators, work to attest to the payout outcome in a decentralized manner. Their functionality is abstract, meaning Attestors don't know the specific outcome or participants, enhancing security. Consensus among multiple Attestors is used for signing, leveraging decentralized security. Misbehaving Attestors can be penalized through slashing, maintaining integrity.
 
 Read more about Bitcoin Attestors here: [https://www.dlc.link/blog/what-is-a-bitcoin-attestor](https://www.dlc.link/blog/what-is-a-bitcoin-attestor)
 
 ## Supported Blockchains
 
-Currently we're supporting EVM compatible change such as **Ethereum** (Optimism, Avalanche and others coming soon) as well as the [Stacks](https://www.stacks.co/) blockchain. Next on our roadmap is Cosmos.
+Currently we're supporting EVM compatible change such as **Ethereum** as well as the [Stacks](https://www.stacks.co/) blockchain. Solana, Polkadot, Cosmos and other chains will be added soon.
 
 ### Onboarding new Blockchains
 
-Onboarding a new blockchain requires writing our DLC management contracts and associated example contracts, to the new framework. This generally takes only a few weeks to implement, followed by a period of time for security assessment and testing.
-
-Because our tool's purpose is to bridge to native Bitcoin, nearly any blockchain that does financial transactions of any kind is a strong candidate for integration. We don't rely on any specific technologies of the underlying blockchain, as most of the heavy lifting is done by the Bitcoin wallets and our decentralized set of Bitcoin Attestors. This means there are very few requirements on the blockchain, and we plan to be able to develop our tools into many of them.&#x20;
+Onboarding a new blockchain with our DLC management contracts takes just a few weeks to implement, followed by a security assessment and testing phase. Since our tool bridges to native Bitcoin and leverages Bitcoin wallets and decentralized Bitcoin Attestors, it can integrate with nearly any blockchain that handles financial transactions. This flexibility means that there are minimal requirements on the underlying blockchain, allowing for broad development potential.
 
 ## Components of a DLC
 
@@ -48,19 +42,15 @@ For either case, we have developed and built-upon DLC libraries that will provid
 
 For end-user wallets, that are often written in JS or ReactNative, we have a JS library that can easily be dropped into existing web/mobile wallets. We have also developed our own DLC-Enabled BTC wallet for testing purposes.
 
-#### Backend Wallet Service
+#### Router Wallet Service
 
-We are developing a secure, reliable wallet service for enterprises and financial institutions to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well developed and featureful open-source DLC management project.
+We are developing a secure, reliable wallet service for enterprises and financial institutions to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well-developed and featureful open-source DLC management project.
 
-### Attestor
+### Attestors
 
-The Bitcoin Attestors make up a disjoint set of independent nodes running DLC Attestor software. They are used to sign and attest to DLC outcomes. See the [above section](tech-stack.md#securing-bitcoin-oracles-and-dlcs) for more details.
-
-The Attestor also fulfills a listening function, whereby it communicates with the create and payout steps with smart contracts. There is no application logic in the listener, and in order to ensure safety, a back-checking entity verifies the results of the Bitcoin Attestors on-chain. This guarantees that the Attestors signed correct values and ensures that there was no manipulation anywhere along the path.
+The Bitcoin Attestors consist of independent nodes running DLC Attestor software, used to sign and attest to DLC outcomes. In addition to signing, the Attestor fulfills a listening function, communicating with the create and payout steps with smart contracts. With no application logic in the listener, safety is ensured through a back-checking entity that verifies the results of the Bitcoin Attestors on-chain. This verification guarantees the accuracy of the Attestors' signed values and provides assurance against manipulation at any point in the process.
 
 ### Smart Contracts
 
-Smart contracts on decentralized blockchains provide the best, most secure and reliable way to manage secure applications, such as payment protocol. They are open source, decentralized, censorship resistant, and immutable.
-
-This is why we connected our Bitcoin Attestors to blockchain dapps, to provide the best digital currency with the best platforms for application development.
+Smart contract integrations provide enhanced security by allowing both the attestor and the system to verify smart contract outputs directly on-chain. This ensures a transparent and trustworthy process. Our Bitcoin Attestors have been connected to blockchain DApps to leverage this benefit, merging the strength of Bitcoin with cutting-edge platforms for application development. The integration process is made even more attractive by its simplicity, requiring only the implementation of the "Open DLC" and "Close DLC" functions. These functions usually consist of fewer than 30 lines of code, making it an accessible solution that combines robust security with efficiency.
 
