@@ -29,9 +29,9 @@ As the DLC.Link product is currently in the beta-testing phase, you must first r
 
 ## Step 2 | Router Wallet Communication
 
-Bitcoin Contracts are powered by the underlying technology known as DLCs (Discreet Log Contracts). These contracts involve two parties, an offeror and an acceptor. This is where the Router Wallet comes in. In our current setup the user's Hiro wallet acts as the acceptor and the Router Wallet acts as the offeror. But the Router Wallet is more than just a Bitcoin wallet. It communicates with both the `dlc-manager` and the attestors and manages the lifecycle of a Bitcoin Contract, from creation to closure.
+Bitcoin Contracts are powered by the underlying technology known as DLCs (Discreet Log Contracts). These contracts involve two parties, an offeror and an acceptor. This is where the Router Wallet comes in. In the current setup of the DLC.Link solution, the user's Hiro wallet acts as the acceptor and the Router Wallet acts as the offeror. But the Router Wallet is more than just a Bitcoin wallet. It communicates with both the `dlc-manager` and the attestors and manages the lifecycle of a Bitcoin Contract, from creation to closure.
 
-When a user wants to accept a Bitcoin Contract, they will first need to fetch an offer from the Router Wallet. Once the request arrives at the Router Wallet, it will then create a Bitcoin Contract with the given parameters and send it to the user's Hiro wallet. The user can then accept the offer and the Router Wallet will manage the lifecycle of the Bitcoin Contract.
+When a user wishes to accept a Bitcoin Contract and invokes the specified function, the dApp is expected to retrieve a Bitcoin Contract offer from the Router Wallet. Once the request arrives at the Router Wallet, it will then create a Bitcoin Contract with the given parameters and send it to the user's Hiro wallet. The user can then accept the offer and the Router Wallet will manage the lifecycle of the Bitcoin Contract.
 
 ### Router Wallet Setup
 
@@ -50,13 +50,14 @@ To integrate your dApp with the Router Wallet, follow these steps:
 
 1. Request a Bitcoin Contract using the dlc-manager contract. This will provide you with a unique identifier (UUID).
 2. Use the UUID and other Bitcoin Contract parameters obtained from the smart contract or set them directly in your dApp.
-3. Send these parameters to the Router Wallet using the offer API endpoint.
+3. From the dApp, send these parameters to the Router Wallet using the offer API endpoint.
 
 The required parameters for the offer API endpoint are as follows:
 
 - uuid: The unique identifier of the Bitcoin Contract.
 - acceptCollateral: The amount of collateral the acceptor (user's wallet) is willing to deposit.
 - offerCollateral: The amount of collateral the offeror (Router Wallet) is willing to deposit.
+  _Note_ In the current setup of the DLC Link solution, this should always be 0.
 - totalOutcomes: The total number of outcomes of the Bitcoin Contract.
 - attestorList: The list of attestors that will be involved in the Bitcoin Contract.
 
