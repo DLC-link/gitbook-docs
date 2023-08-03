@@ -1,21 +1,30 @@
 # Liquidation Flows
 
-In order for a lender to eliminate their own need to manage native Bitcoin payments, the system can be designed with what we're calling a **Liquidator**. The liquidator is the counterparty in the DLC. In the case of a default, Bitcoin is seized and sent to the liquidator, who repays the lender in exchange for a transaction fee.
+In the case of a default, Bitcoin is seized and must be liquidated to repay the lender (most commonly, in exchange for a transaction fee).
 
-### Simple Liquidation Flow
+Several scenarios exist to handle liquidations. Liquidations can be facilitated via centralized entities, via smart contracts or by a mix of both.
 
-If the user repays the loan, collateral is returned to the borrower and the liquidator is not utilized.\
-\
-In the case of a default, the Bitcoin moves to the liquidator. Working with an exchange or OTC trading desk, the liquidator swaps the Bitcoin for wBTC, USDC or another asset. The liquidator sends the funds to the lender, less a processing fee.
+Here are examples of each:
 
-<figure><img src="../../.gitbook/assets/DLC.Link_SimpleLiquidationFlow (3).png" alt=""><figcaption></figcaption></figure>
+1. **DApp-Handled Liquidations**: The decentralized application (DApp) itself manages both the routing and liquidations. To facilitate this option, the DApp must be equipped with a DLC-enabled Bitcoin wallet, allowing it to function as the counterparty in the transaction.
+2. **Third-Party Liquidations with Router**: In this scenario, liquidation is handled by a third-party, such as AAVE-style crowdsourced Liquidators. A component called the **Router** acts as the counterparty to the DLC and follows the DApp's instructions to move the liquidated BTC.
+3. **Entity as a Liquidator with Router**: A specific entity serves as the Liquidator, with a Router acting as the counterparty, sending liquidated BTC to the Liquidator, who then repays the lender.
+4. **Entity as a Liquidator with Off-Chain Transaction**: An entity called the "Liquidator" directly serves as the counterparty. This Liquidator then sells the BTC in an off-chain transaction to repay the lender.
 
-### Isolated Liquidity Pool
 
-#### What is an Isolated Liquidity Pool?
 
-The term Isolated Liquidity Pool refers to a smart contract that allows for multiple independent participants to support a **Liquidator** during a liquidation event. The pool of liquidators is referred to as _isolated_ because it's totally unaffiliated with the original loan and instead participates via smart contracts.
+Our assumption is that most DApps can't or won't want to handle a Bitcoin wallet address. In this scenario, to minimize trust, we generally recommend that the Router be implemented as a smart contract. Let's review a version of this.
 
-See below for an example setup of a liquidator supported Bitcoin-collateral loan with an isolated liquidity pool.
 
-<figure><img src="../../.gitbook/assets/DLC.Link_IPLLiquidationFlow.png" alt=""><figcaption></figcaption></figure>
+
+### Third-Party Liquidations with Router
+
+In this approach, the liquidation process is outsourced to a third party. This third-party does not directly interact with the underlying Discreet Log Contract (DLC), but instead, they engage through a component called the **Router**.
+
+**How it Works:**
+
+* **Router**: The Router serves as the counterparty to the DLC. It has the essential functionality to move the liquidated Bitcoin (BTC) as per the instructions from the decentralized application (DApp). The Router must be equipped to understand and execute the specific contract terms related to liquidation.
+* **Third-Party Liquidators**: These are entities or individuals who can participate in the liquidation process. They may be incentivized through fees, and they interact with the Router through a predefined API.
+* **DApp**: The DApp facilitates the liquidation process by establishing the rules and conditions under which liquidation occurs, and it communicates these to the Router. It may also handle other functionalities like monitoring the asset's price, determining liquidation thresholds, and more.
+
+<figure><img src="../../.gitbook/assets/Router Flow.png" alt=""><figcaption></figcaption></figure>
