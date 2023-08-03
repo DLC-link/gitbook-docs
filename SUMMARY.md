@@ -24,9 +24,3 @@
   * [Liquidation Flows](architecture/technical-application-designs/liquidation-flows.md)
   * [Example Liquidation with NFT](architecture/technical-application-designs/example-liquidation-with-nft.md)
 * [Code Repositories](architecture/code-repository.md)
-
-***
-
-* [Additional Resources](additional-resources/README.md)
-  * [Discreet Log Contracts](additional-resources/discreet-log-contracts.md)
-  * [Multi-Signature Wallets](additional-resources/multi-signature-wallets.md)
