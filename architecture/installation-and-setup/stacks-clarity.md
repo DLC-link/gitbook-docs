@@ -1,7 +1,5 @@
 # Stacks / Clarity
 
-#### Stacks / Clarity
-
 The Clarity contract bringing DLC.Link functionality to Stacks can be found in [this repository.](https://github.com/dlc-link/dlc-clarity)
 
 The best way to understanding integration with our Clarity smart contracts is by reading our [example protocol-contract](https://github.com/DLC-link/dlc-clarity/blob/main/examples/sample-contract-loan.clar).
