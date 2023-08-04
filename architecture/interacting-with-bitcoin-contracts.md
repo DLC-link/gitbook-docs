@@ -20,12 +20,12 @@ _Note_ Bitcoin Contracts are powered by the underlying technology known as DLCs 
 
 To enable the use of DLCs, which let users transact with native Bitcoin directly, it is essential to acquaint yourself with either DLC.Link's Clarity or Solidity contract. These are referred to as the DLC Manager contracts. Calling into the DLC Manager contract happens directly from your smart contract. See the following instructions for more details:
 
-- Solidity: https://github.com/DLC-link/dlc-solidity/tree/attestor-manager ----- Link to the docs page
-- Clarity: https://github.com/DLC-link/dlc-clarity/tree/attestor-manager ----- Link to the docs page
+- Solidity: https://github.com/DLC-link/dlc-solidity/tree/1.0/prerelease
+- Clarity: https://github.com/DLC-link/dlc-clarity/tree/1.0/prerelease
 
 #### Registering Your Smart Contract
 
-As the DLC.Link product is currently in the beta-testing phase, you must first register your contract with the DLC.Link development team in our Discord server. Once you deploy your contract, please share it's address with the DLC.Link developers to have it whitelisted. Please contact DLC.Link on our Discord server.
+As the DLC.Link product is currently in the beta-testing phase, you must first register your contract with the DLC.Link development team in our Discord server. Once you deploy your contract, please share it's address with the DLC.Link developers to have it whitelisted. Please contact DLC.Link on their [Discord server](https://discord.gg/MYphfaZrtB).
 
 ## Step 2 | Router Wallet Communication
 
@@ -49,7 +49,7 @@ Once you have set up your Router Wallet, please share its address with the DLC.L
 To integrate your dApp with the Router Wallet, follow these steps:
 
 1. Request a Bitcoin Contract using the dlc-manager contract. This will provide you with a unique identifier (UUID).
-2. Use the UUID and other Bitcoin Contract parameters obtained from the smart contract or set them directly in your dApp.
+2. Use the UUID and other Bitcoin Contract parameters obtained from the smart contract, or set them directly in your dApp.
 3. From the dApp, send these parameters to the Router Wallet using the offer API endpoint.
 
 The required parameters for the offer API endpoint are as follows:
@@ -57,9 +57,10 @@ The required parameters for the offer API endpoint are as follows:
 - uuid: The unique identifier of the Bitcoin Contract.
 - acceptCollateral: The amount of collateral the acceptor (user's wallet) is willing to deposit.
 - offerCollateral: The amount of collateral the offeror (Router Wallet) is willing to deposit.
-  _Note_ In the current setup of the DLC Link solution, this should always be 0.
+  _Note:_ In the current setup of the DLC Link solution, this is recommended to be 0.
 - totalOutcomes: The total number of outcomes of the Bitcoin Contract.
 - attestorList: The list of attestors that will be involved in the Bitcoin Contract.
+*[Router Docs](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet) to learn more about any of these parameters.*
 
 By providing these parameters to the Router Wallet, you can successfully fetch an offer for the Bitcoin Contract.
 
