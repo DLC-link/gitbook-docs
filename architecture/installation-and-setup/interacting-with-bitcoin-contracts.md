@@ -20,8 +20,8 @@ _Note_ Bitcoin Contracts are powered by the underlying technology known as DLCs 
 
 To enable the use of DLCs, which let users transact with native Bitcoin directly, it is essential to acquaint yourself with either DLC.Link's Clarity or Solidity contract. These are referred to as the DLC Manager contracts. Calling into the DLC Manager contract happens directly from your smart contract. See the following instructions for more details:
 
-- Solidity: https://github.com/DLC-link/dlc-solidity/tree/1.0/prerelease
-- Clarity: https://github.com/DLC-link/dlc-clarity/tree/1.0/prerelease
+- [Solidity Docs](https://github.com/DLC-link/dlc-solidity/tree/1.0/prerelease)
+- [Clarity Docs](https://github.com/DLC-link/dlc-clarity/tree/1.0/prerelease)
 
 #### Registering Your Smart Contract
 
@@ -60,7 +60,7 @@ The required parameters for the offer API endpoint are as follows:
   _Note:_ In the current setup of the DLC Link solution, this is recommended to be 0.
 - totalOutcomes: The total number of outcomes of the Bitcoin Contract.
 - attestorList: The list of attestors that will be involved in the Bitcoin Contract.
-*[Router Docs](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet) to learn more about any of these parameters.*
+  _[Router Docs](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet) to learn more about any of these parameters._
 
 By providing these parameters to the Router Wallet, you can successfully fetch an offer for the Bitcoin Contract.
 
