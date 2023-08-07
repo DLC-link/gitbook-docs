@@ -13,3 +13,5 @@ DLC.Link has libraries allowing for simple and fast configuration of DLCs in you
 [Bitcoin Wallets](installation-and-setup/bitcoin-wallets.md)
 
 [Bitcoin Oracle Nodes](installation-and-setup/bitcoin-oracle-nodes.md)
+
+[Interacting with Bitcoin Contracts](interacting-with-bitcoin-contracts.md)
