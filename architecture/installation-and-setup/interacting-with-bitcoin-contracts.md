@@ -14,7 +14,7 @@ Enabling the interfacing of Bitcoin Contracts via Hiro wallet requires three ste
 
 See the below sections for more details on each step.
 
-_Note_ Bitcoin Contracts are powered by the underlying technology known as DLCs (Discreet Log Contracts) and sometimes the names are used interchangibly. Learn more about DLCs here (http://www.dlc.link)
+_Note_ Bitcoin Contracts are powered by the underlying technology known as DLCs (Discreet Log Contracts) and sometimes the names are used interchangibly. Learn more about DLCs here [DLC.Link](https://www.dlc.link)
 
 ## Step 1 | Solidity / Clarity Smart Contract Integration
 
@@ -36,7 +36,7 @@ When a user wishes to accept a Bitcoin Contract and invokes the specified functi
 ### Router Wallet Setup
 
 On how to set up the Router Wallet, please refer to the following documentation:
-https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet
+[Router Wallet](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet)
 
 #### Registering Your Router Wallet
 
