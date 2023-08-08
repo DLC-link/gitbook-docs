@@ -14,7 +14,7 @@ Enabling the interfacing of Bitcoin Contracts via Hiro wallet requires three ste
 
 See the below sections for more details on each step.
 
-_Note_ Bitcoin Contracts are powered by the underlying technology known as DLCs (Discreet Log Contracts) and sometimes the names are used interchangibly. Learn more about DLCs here [DLC.Link](https://www.dlc.link)
+_Note_ Bitcoin Contracts are powered by the underlying technology known as DLCs (Discreet Log Contracts) and sometimes the names are used interchangibly. [Learn more about DLCs here](https://www.dlc.link)
 
 ## Step 1 | Solidity / Clarity Smart Contract Integration
 
@@ -23,7 +23,7 @@ To enable the use of DLCs, which let users transact with native Bitcoin directly
 - [Solidity Docs](https://github.com/DLC-link/dlc-solidity/tree/1.0/prerelease)
 - [Clarity Docs](https://github.com/DLC-link/dlc-clarity/tree/1.0/prerelease)
 
-#### Registering Your Smart Contract
+### Registering Your Smart Contract
 
 As the DLC.Link product is currently in the beta-testing phase, you must first register your contract with the DLC.Link development team in our Discord server. Once you deploy your contract, please share it's address with the DLC.Link developers to have it whitelisted. Please contact DLC.Link on their [Discord server](https://discord.gg/MYphfaZrtB).
 
@@ -143,29 +143,33 @@ const requestParams: BitcoinContractRequestParams = {
   counterpartyWalletDetails: counterpartyWalletDetails,
 };
 
-const response = await window.btc.request('acceptBitcoinContractOffer', requestParams);
+const sendOfferToHiroWallet = async () => {
+  window.btc
+    .request('acceptBitcoinContractOffer', urlParams)
+    .then((response) => {
+      // Success! The user has accepted the offer.
+      console.log(response.result.txId); // The broadcasted transaction ID.
+      console.log(response.result.contractId); // The contract ID.
+    })
+    .catch((error) => {
+      // Error! The user has declined the offer, us or an error has occurred.
+      console.error(error.error.message); // The error message.
+    });
+};
 ```
 
-The response of the API call will be an object with the following fields:
+The API will return an object which may optionally contain a contractId and a txId, both of which are strings.
 
 ```ts
 interface BitcoinContractResponseBody {
-  contractId: string;
-  action: string;
+  contractId?: string;
   txId?: string;
-  error?: string;
 }
 ```
 
-Upon accepting the offer, the response will include the `action` field set to `accept`, along with the broadcasted transaction ID (`txId`) and the corresponding `contractId`. If the user rejects the offer, the response will show the `action` field as `reject`, and also provide the `contractId` used to fetch the offer. In case the broadcast fails, the response will indicate `action` as `failed`, and include the `contractId` associated with the offer retrieval.
+When the offer gets accepted, the response will include the broadcasted transaction ID (`txId`) and its corresponding contract ID (`contractId`). On the other hand, if the user turns down the offer, closes the window, operates on an unsupported network, or faces an error while accepting, you'll receive an error object detailing the specific error message.
 
-You can use the txId to check the status of the transaction on the blockchain.
-
-```ts
-if (response.result.action === 'accept') {
-  const txId = response.result.txId;
-}
-```
+You can use the `txId` to check the status of the transaction on the blockchain.
 
 This function will pop up a window that will allow the user to review and accept the offer, and then sign and broadcast the contract.
 
