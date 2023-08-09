@@ -18,6 +18,9 @@ description: Blockchains, Applications and Teams building with DLC.Link
 
 ## Hiro Wallet
 
-[Hiro](https://wallet.hiro.so/) is the predominant wallet in use in the Stacks ecosystem. Hiro supports BTC, STX, Ordinals and is soon adding LN. Over 100,000 people use Hiro to connect to applications created by Stacks and Trust Machines.\
+[Hiro](https://wallet.hiro.so/) is the predominant wallet in use in the Stacks ecosystem. Hiro supports BTC, STX, Ordinals and is soon adding LN. Over 100,000 people use Hiro to connect to applications created by Stacks and Trust Machines.
 
+{% embed url="https://hirowallet.gitbook.io/developers/bitcoin/discreet-log-contracts" %}
+Developer documentation
+{% endembed %}
 
