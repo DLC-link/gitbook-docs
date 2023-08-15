@@ -1,4 +1,4 @@
-# Interacting with Bitcoin Contracts in the Hiro Wallet
+# Interacting with Bitcoin Contracts
 
 ## Overview
 
@@ -20,12 +20,12 @@ _Note_ Bitcoin Contracts are powered by the underlying technology known as DLCs 
 
 To enable the use of DLCs, which let users transact with native Bitcoin directly, it is essential to acquaint yourself with either DLC.Link's Clarity or Solidity contract. These are referred to as the DLC Manager contracts. Calling into the DLC Manager contract happens directly from your smart contract. See the following instructions for more details:
 
-- [Solidity Docs](https://github.com/DLC-link/dlc-solidity/tree/1.0/prerelease)
-- [Clarity Docs](https://github.com/DLC-link/dlc-clarity/tree/1.0/prerelease)
+* [Solidity Docs](https://github.com/DLC-link/dlc-solidity/tree/1.0/prerelease)
+* [Clarity Docs](https://github.com/DLC-link/dlc-clarity/tree/1.0/prerelease)
 
 #### Registering Your Smart Contract
 
-As the DLC.Link product is currently in the beta-testing phase, you must first register your contract with the DLC.Link development team in our Discord server. Once you deploy your contract, please share it's address with the DLC.Link developers to have it whitelisted. Please contact DLC.Link on their [Discord server](https://discord.gg/MYphfaZrtB).
+As the DLC.Link product is currently in the beta-testing phase, you must first register your contract with the DLC.Link development team in our Discord server. Once you deploy your contract, please share it's address with the DLC.Link developers to have it whitelisted.
 
 ## Step 2 | Router Wallet Communication
 
@@ -35,8 +35,7 @@ When a user wishes to accept a Bitcoin Contract and invokes the specified functi
 
 ### Router Wallet Setup
 
-On how to set up the Router Wallet, please refer to the following documentation:
-[Router Wallet](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet)
+On how to set up the Router Wallet, please refer to the following documentation: [Router Wallet](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet)
 
 #### Registering Your Router Wallet
 
@@ -54,13 +53,11 @@ To integrate your dApp with the Router Wallet, follow these steps:
 
 The required parameters for the offer API endpoint are as follows:
 
-- uuid: The unique identifier of the Bitcoin Contract.
-- acceptCollateral: The amount of collateral the acceptor (user's wallet) is willing to deposit.
-- offerCollateral: The amount of collateral the offeror (Router Wallet) is willing to deposit.
-  _Note:_ In the current setup of the DLC Link solution, this is recommended to be 0.
-- totalOutcomes: The total number of outcomes of the Bitcoin Contract.
-- attestorList: The list of attestors that will be involved in the Bitcoin Contract.
-  _[Router Docs](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet) to learn more about any of these parameters._
+* uuid: The unique identifier of the Bitcoin Contract.
+* acceptCollateral: The amount of collateral the acceptor (user's wallet) is willing to deposit.
+* offerCollateral: The amount of collateral the offeror (Router Wallet) is willing to deposit. _Note:_ In the current setup of the DLC Link solution, this is recommended to be 0.
+* totalOutcomes: The total number of outcomes of the Bitcoin Contract.
+* attestorList: The list of attestors that will be involved in the Bitcoin Contract. [_Router Docs_](https://github.com/DLC-link/dlc-stack/tree/1.0/prerelease/wallet) _to learn more about any of these parameters._
 
 By providing these parameters to the Router Wallet, you can successfully fetch an offer for the Bitcoin Contract.
 
@@ -169,6 +166,4 @@ if (response.result.action === 'accept') {
 
 This function will pop up a window that will allow the user to review and accept the offer, and then sign and broadcast the contract.
 
-<img src="https://drive.google.com/uc?id=1cjWdzsAzOmOI4Aw_xylKRvj_9kLOr44r"
-     alt="Hiro Wallet Popup Window"
-     style="display: block; margin-right: auto; margin-left: auto; width: 35%;" />
+![Hiro Wallet Popup Window](https://drive.google.com/uc?id=1cjWdzsAzOmOI4Aw\_xylKRvj\_9kLOr44r)
