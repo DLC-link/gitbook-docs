@@ -18,7 +18,7 @@
   * [Solidity](architecture/installation-and-setup/solidity.md)
   * [Stacks / Clarity](architecture/installation-and-setup/stacks-clarity.md)
   * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
-  * [Bitcoin Attestors](architecture/installation-and-setup/bitcoin-oracle-nodes.md)
+  * [DLC Attestors](architecture/installation-and-setup/dlc-attestors.md)
   * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
   * [Interacting with Bitcoin Contracts](architecture/installation-and-setup/interacting-with-bitcoin-contracts.md)
 * [Example Application Designs](architecture/technical-application-designs/README.md)
