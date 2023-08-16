@@ -7,7 +7,7 @@ description: A list of potential use cases for DLCs
 DLCs enable Bitcoin on-chain deposits for lending, trading and investing.\
 
 
-**CeFi, Finance and Settlement**
+**CeFi Finance and Settlement**
 
 Credit Trading Desks: Integration allows the custodian to provide borrowing and other financial services to their self-custodied Bitcoin clients.
 
@@ -20,7 +20,7 @@ Exchanges and OTC Desks: By facilitating trades via escrow, [DLC.Link](http://dl
 Payments: Lock BTC to be used in a Lightning transaction. Enable Bitcoin wallets to have a refund transaction.\
 
 
-**DeFi Use Cases**
+**DeFi Protocols**
 
 DeFi Lend/Borrow Protocols: Integration provides the ability to provide a soft-pegged stablecoin or loan backed by Bitcoin collateral secured on-chain.
 
