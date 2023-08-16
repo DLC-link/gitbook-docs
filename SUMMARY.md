@@ -7,6 +7,7 @@
 
 ## Use Cases
 
+* [Example Use Cases](use-cases/example-use-cases.md)
 * [Borrowing USDC against Bitcoin in Arcade.xyz](use-cases/borrowing-usdc-against-bitcoin-in-arcade.xyz.md)
 * [Repayment and Liquidation](use-cases/borrowing-with-self-custodied-btc.md)
 
