@@ -30,6 +30,10 @@ Onboarding a new blockchain with our DLC management contracts takes just a few w
 
 ## Components of a DLC
 
+###
+
+<figure><img src="../.gitbook/assets/DLC.Link_TechnicalFlow_latest.png" alt=""><figcaption></figcaption></figure>
+
 ### Wallets
 
 A key component of the DLC.Link architecture is our inclusion in various BTC supporting wallets. DLCs are designed so that the smart contracts and Bitcoin Attestors know as little about the details of the bitcoin payments and wallets as possible. This is a great security feature, and means the wallets themselves need to do a good deal of DLC signing.
