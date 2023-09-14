@@ -2,11 +2,11 @@
 
 ### Website
 
-{% embed url="https://www.dlc.link/" %}
+[https://www.dlc.link/](https://www.dlc.link/)
 
-### Github
+### GitHub
 
-{% embed url="https://github.com/dlc-link" %}
+[https://github.com/dlc-link](https://github.com/dlc-link)
 
 ### Twitter&#x20;
 
@@ -18,4 +18,4 @@
 
 ### Youtube
 
-{% embed url="https://www.youtube.com/@dlc-link" %}
+[https://www.youtube.com/@dlc-link](https://www.youtube.com/@dlc-link)
