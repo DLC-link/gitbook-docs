@@ -87,9 +87,15 @@ For either case, we have developed and built-upon DLC libraries that will provid
 
 For end-user wallets, that are often written in JS or ReactNative, we have a JS library that can easily be dropped into existing web/mobile wallets. We have also developed our own DLC-Enabled BTC wallet for testing purposes.
 
+The DLC.Link signing library is publically available here: [https://www.npmjs.com/package/@dlc-link/dlc-tools](https://www.npmjs.com/package/@dlc-link/dlc-tools)
+
+DLC signing is available in the Leather wallet. [https://leather.io/](https://leather.io/)
+
+You can read more about the JS library and setting it up here:  [bitcoin-wallets.md](installation-and-setup/bitcoin-wallets.md "mention")
+
 #### Router Wallet Service
 
-We are developing a secure, reliable wallet service for enterprises and financial institutions to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well-developed and featureful open-source DLC management project.
+We have released a secure, reliable wallet service for financial institutions and dApps to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well-developed and featureful open-source DLC management project.
 
 ### Smart Contracts
 
