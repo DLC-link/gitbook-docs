@@ -95,7 +95,7 @@ You can read more about the JS library and setting it up here:  [bitcoin-wallets
 
 #### Router Wallet Service
 
-We have released a secure, reliable wallet service for financial institutions and dApps to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well-developed and featureful open-source DLC management project.
+We have released a secure, reliable BTC/DLC signing application for financial institutions and dApps to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well-developed and featureful open-source DLC management project. While this service can sign Bitcoin DLC transactions, it does not have wallet functionality, and does not manage any funds directly.
 
 ### Smart Contracts
 
