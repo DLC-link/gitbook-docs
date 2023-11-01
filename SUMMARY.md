@@ -1,15 +1,18 @@
 # Table of contents
 
-* [DLC.Link - Documentation](README.md)
+* [Overview](README.md)
 * [Partnerships](partnerships.md)
 * [Lightpaper](lightpaper.md)
-* [The Team](the-team.md)
+* [Team](the-team.md)
 
-## Use Cases
+## Applications
 
-* [Example Use Cases](use-cases/example-use-cases.md)
-* [Borrowing USDC against Bitcoin in Arcade.xyz](use-cases/borrowing-usdc-against-bitcoin-in-arcade.xyz.md)
-* [Repayment and Liquidation](use-cases/borrowing-with-self-custodied-btc.md)
+* [DLC Use Cases](applications/dlc-use-cases.md)
+* [Repayment and Liquidation](applications/borrowing-with-self-custodied-btc.md)
+* [Example DLC Designs](applications/technical-application-designs/README.md)
+  * [DLC-Enabled Loans](applications/technical-application-designs/simple-case.md)
+  * [Liquidation Flows](applications/technical-application-designs/liquidation-flows.md)
+  * [Liquidation with NFT](applications/technical-application-designs/example-liquidation-with-nft.md)
 
 ## Architecture
 
@@ -21,12 +24,8 @@
   * [DLC Attestors](architecture/installation-and-setup/dlc-attestors.md)
   * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
   * [Interacting with Bitcoin Contracts](architecture/installation-and-setup/interacting-with-bitcoin-contracts.md)
-* [Example Application Designs](architecture/technical-application-designs/README.md)
-  * [DeFi Loan Example](architecture/technical-application-designs/simple-case.md)
-  * [Liquidation Flows](architecture/technical-application-designs/liquidation-flows.md)
-  * [Example Liquidation with NFT](architecture/technical-application-designs/example-liquidation-with-nft.md)
 * [Code Repositories](architecture/code-repository.md)
 
-## USEFUL INFORMATION
+## Appendix
 
-* [Official Links](useful-information/official-links.md)
+* [Official Links](appendix/official-links.md)

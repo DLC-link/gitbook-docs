@@ -1,10 +1,10 @@
 ---
-description: All of DLC.Link's documentation, in one place.
+description: An overview of DLCs and DLC.Link
 cover: .gitbook/assets/GitBook_Header_DLC.Link (1).png
 coverY: 0
 ---
 
-# DLC.Link - Documentation
+# Overview
 
 {% hint style="info" %}
 Billions of dollars in Bitcoin capital is waiting to be used in smart contracts for lending, hedging, and trading.
