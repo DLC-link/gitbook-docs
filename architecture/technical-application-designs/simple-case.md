@@ -1,4 +1,4 @@
-# DeFi Loan Example
+# DLC-Enabled Loans
 
 ### Components
 

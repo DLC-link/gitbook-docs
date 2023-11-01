@@ -2,7 +2,7 @@
 description: A list of potential use cases for DLCs
 ---
 
-# Example Use Cases
+# DLC Use Cases
 
 DLCs enable Bitcoin on-chain deposits for lending, trading and investing.\
 

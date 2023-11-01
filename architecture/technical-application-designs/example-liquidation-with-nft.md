@@ -1,4 +1,4 @@
-# Example Liquidation with NFT
+# Liquidation with NFT
 
 DLC.Link has designed a token standard using ERC-721 (NFT) or ERC-1155 (Semi-fungible token) tokens which represent Bitcoin locked in the DLC escrow. This type of token is often referred to as a **Proof of Reserve** or **Proof of Collateral** token.
 

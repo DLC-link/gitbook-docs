@@ -7,12 +7,12 @@
 
 ## Applications
 
-* [DLC Use Cases](applications/dlc-use-cases.md)
-* [Repayment and Liquidation](applications/borrowing-with-self-custodied-btc.md)
-* [Example DLC Designs](applications/technical-application-designs/README.md)
-  * [DLC-Enabled Loans](applications/technical-application-designs/simple-case.md)
-  * [Liquidation Flows](applications/technical-application-designs/liquidation-flows.md)
-  * [Liquidation with NFT](applications/technical-application-designs/example-liquidation-with-nft.md)
+* [DLC Use Cases](use-cases/example-use-cases.md)
+* [Repayment and Liquidation](use-cases/borrowing-with-self-custodied-btc.md)
+* [Example DLC Designs](architecture/technical-application-designs/README.md)
+  * [DLC-Enabled Loans](architecture/technical-application-designs/simple-case.md)
+  * [Liquidation Flows](architecture/technical-application-designs/liquidation-flows.md)
+  * [Liquidation with NFT](architecture/technical-application-designs/example-liquidation-with-nft.md)
 
 ## Architecture
 
@@ -28,4 +28,4 @@
 
 ## Appendix
 
-* [Official Links](appendix/official-links.md)
+* [Official Links](useful-information/official-links.md)
