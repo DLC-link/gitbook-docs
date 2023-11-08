@@ -6,15 +6,15 @@ description: Non-custodial wrapped Bitcoin for DeFi on Ethereum
 
 **Introduction to dlcBTC**
 
-dlcBTC is a tokenized representation of Bitcoin on Ethereum, allowing Bitcoin holders to engage in DeFi protocols without relinquishing ownership of their assets. dlcBTC utilizes Discreet Log Contracts (DLCs) to lock Bitcoin on-chain, ensuring that users maintain control of their funds through a 2-of-2 multisig UTXO. One key is held by the user, and the other is held in a decentralized manner by the network.
+dlcBTC is a tokenized representation of Bitcoin on Ethereum, allowing Bitcoin holders to engage in DeFi protocols without endangering their assets. dlcBTC utilizes Discreet Log Contracts (DLCs) to lock Bitcoin on-chain, ensuring that users maintain control of their funds through a 2-of-2 multisig UTXO. One key is held by the user, and the other is held in a decentralized manner by the network. This decentralized mechanism ensures that the user's Bitcoin remains in their control.
 
 **How dlcBTC Works**
 
-1. **Locking BTC**: Users initiate a transaction to lock their BTC into a DLC. This action mints dlcBTC tokens equivalent to the amount of BTC locked.
-2. **DLC Mechanism**: A DLC is a simple "smart contract" on the Bitcoin blockchain that enforces the rules of the agreement between the user and the protocol.
-3. **Key Distribution**: Users hold one key to the multisig UTXO, ensuring they retain control over their assets.
-4. **Attestor Layer**: This layer comprises entities that monitor blockchain events, announce new DLCs, and validate outcomes, facilitating cross-chain communication.
-5. **Using dlcBTC**: Once dlcBTC tokens are minted, users can use them as collateral in various DeFi platforms.
+1. **Locking BTC**: Users lock their BTC into a DLC using DLC.Link's bridge. This process mints dlcBTC tokens equivalent to the amount of BTC locked.
+2. **DLC Mechanism**: A DLC acts as a lockbox via a contract on the Bitcoin blockchain, detailing a pre-signed agreement between the user and the protocol.
+3. **Key Distribution**: Users hold one key to the multisig UTXO, and the second is distributed among the attestor nodes. The DLC can only be liquidated back to the user, safeguarding against theft or loss.
+4. **Attestor Layer**: A network of seven trusted node operators monitor blockchain events, announce DLC creations, and validate outcomes. They support the bridge by ensuring reliable cross-chain communication without holding users' keys.
+5. **Using dlcBTC**: Minted dlcBTC tokens can be employed as collateral within various DeFi platforms, such as Curve and AAVE.
 
 **Comparison to wBTC and Other Bridged Assets**
 
@@ -31,9 +31,9 @@ The process of minting dlcBTC involves creating a DLC where the user's BTC is lo
 
 dlcBTC v1 will launch with the following features:
 
-* **Whitelisted access**: Access to the dlcBTC bridge is exclusive to whitelisted entities such as Bitcoin miners, exchanges, and financial institutions, ensuring a focused and secure environment for large-scale operations.
-* **Security**: In v1, depositors will be locking BTC with themselves. All payout addresses from the DLC will point to the user's wallet. Thus, it will be impossible for BTC to be hacked or stolen in any adverse event.
-* **Redemptions**: At launch, dlcBTC will partner with several centralized and decentralized exchanges to enable common trading pairs, including dlcBTC-BTC to enable redemption back into BTC.
+* **Whitelisted access**: Only Bitcoin miners, exchanges, and financial institutions pre-approved through a stringent vetting process will have access to dlcBTC's bridge, ensuring a secure and controlled environment for significant transactions.
+* **Security**: Depositors lock BTC into the system, with the assurance that all DLC payout addresses direct funds exclusively to the depositor's wallet, making the theft or loss of BTC infeasible.
+* **Redemptions**: Initially, dlcBTC will support dlcBTC-BTC trading pairs on chosen centralized exchanges to ensure direct conversion back to BTC. Additionally, trading pairs like dlcBTC-wBTC and dlcBTC-USDT will be available on widely-used decentralized exchanges.
 * **Integration**: dlcBTC is designed to integrate smoothly with existing DeFi protocols, providing institutions with a seamless transition into decentralized finance.
 
 **Launch Plans**
