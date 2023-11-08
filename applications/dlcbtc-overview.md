@@ -6,7 +6,7 @@ description: Non-custodial wrapped Bitcoin for DeFi on Ethereum
 
 **Introduction to dlcBTC**
 
-dlcBTC is a tokenized representation of Bitcoin on Ethereum, allowing Bitcoin holders to engage in DeFi protocols without endangering their assets. dlcBTC utilizes Discreet Log Contracts (DLCs) to lock Bitcoin on-chain, ensuring that users maintain control of their funds through a 2-of-2 multisig UTXO. One key is held by the user, and the other is held in a decentralized manner by the network. This decentralized mechanism ensures that the user's Bitcoin remains in their control.
+dlcBTC is a non-custodial representation of Bitcoin on Ethereum, enabling Bitcoin holders to participate in DeFi protocols while retaining full ownership of their assets. It employs Discreet Log Contracts (DLCs) to lock Bitcoin in a 2-of-2 multisig UTXO, with one key held by the user and the other distributed across a decentralized network.
 
 **How dlcBTC Works**
 
@@ -18,7 +18,7 @@ dlcBTC is a tokenized representation of Bitcoin on Ethereum, allowing Bitcoin ho
 
 **Comparison to wBTC and Other Bridged Assets**
 
-Unlike wBTC, which relies on a single custodian (BitGo), dlcBTC remains securely locked on-chain, negating the need for a middleman. This approach also differs significantly from bridged assets like tBTC and BTC.B, which typically involve trust in third-party bridge validators or other intermediaries.
+dlcBTC is distinct from wBTC and other bridged assets like tBTC and BTC.B by eliminating the need for intermediaries or custodians, instead locking Bitcoin on-chain with user sovereignty as a core principle. dlcBTC is secured by the full hashrate of the Bitcoin network and doesn't require users to send their BTC to third-party deposit addresses.
 
 **Minting Mechanism**
 
@@ -38,6 +38,8 @@ dlcBTC v1 will launch with the following features:
 
 **Launch Plans**
 
-We are looking to launch dlcBTC v1 in Q1 2024. Stay tuned for more updates!
+dlcBTC v1 is set for release in Q1 2024. Ahead of the launch, a testnet will be available, offering early access and opportunities for user feedback.&#x20;
+
+For updates on our launch, [follow us on Twitter](https://twitter.com/dlc\_link) or [join our Discord](https://discord.gg/pA4rVKfNAA)!
 
 \
