@@ -1,4 +1,8 @@
-# DLC-Enabled Loans
+---
+description: An example of a generic DLC-enabled application
+---
+
+# DLC-Enabled Lender
 
 ### Components
 

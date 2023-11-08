@@ -1,3 +1,7 @@
+---
+description: An excerpt from Hiro (Leather) wallet documentation
+---
+
 # Interacting with Bitcoin Contracts
 
 ## Overview
