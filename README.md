@@ -1,5 +1,4 @@
 ---
-description: An overview of DLCs and DLC.Link
 cover: .gitbook/assets/GitBook_Header_DLC.Link (1).png
 coverY: 0
 ---
@@ -10,6 +9,7 @@ coverY: 0
 Billions of dollars in Bitcoin capital is waiting to be used in smart contracts for lending, hedging, and trading.
 {% endhint %}
 
-Although Bitcoin is the largest digital asset, it does not support smart contracts. Today, it’s not possible to take a loan on Bitcoin without first transferring it to a custodian or a bridge. Custodian failures and bridge hacks, however, have led to over $140Bn in losses to date.
+Although Bitcoin is the largest digital asset, it cannot be used in DeFi without first transferring it to a custodian or a bridge. However, custodian failures and bridge hacks have led to over $140Bn in losses.\
+[DLC.Link](http://dlc.link/) utilizes Discreet Log Contracts, invented at MIT by the co-creator of the Lightning Network, to provide a trustless bridge to DeFi on Ethereum without centralizing or pooling assets.&#x20;
 
-[DLC.link](http://dlc.link) implements Discreet Log Contracts, an MIT invention that makes it easy for app developers to integrate native Bitcoin. Their platform locks Bitcoin into on-chain escrow, from where it can be controlled by Ethereum and other smart contract chains. This “trustless bridge” enables lending, trading, derivatives and more.
+We will be launching dlcBTC, a non-custodial wrapped Bitcoin, in Feb 2024.
