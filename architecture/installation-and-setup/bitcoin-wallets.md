@@ -1,14 +1,16 @@
 # Bitcoin Wallets
 
-<figure><img src="../../.gitbook/assets/DLC.Link_WalletIntegration_Flow.png" alt=""><figcaption></figcaption></figure>
+For instructions on how to use DLCs in Leather (formerly Hiro) wallet, please visit:
 
-### Bitcoin Wallets
+{% embed url="https://leather.gitbook.io/developers/bitcoin/discreet-log-contracts" %}
 
-Signing a DLC requires functionality not always present in existing Bitcoin wallets on the market. To fulfill this requirement, DLC.Link will provide open-source libraries in the Rust and JavaScript programming languages.
+## Bitcoin Wallet Overview
+
+Signing a DLC requires new functionality that is not yet present in Bitcoin wallets. To fulfill this requirement, DLC.Link provides open-source libraries in Rust and JavaScript.
 
 DLC transactions are handled by two parties, an offeror and an acceptor. In our current setup, the Bitcoin wallet acts as the acceptor and the dApp acts as the offeror. It is the Bitcoin wallet that handles accepting signatures, building and signing Contract Execution Transactions (CETs), and broadcasting onto the BTC blockchain.
 
-## Instantiaton of the Javascript DLC Interface
+### Instantiaton of the Javascript DLC Interface
 
 First install the DLC interface using npm:
 
@@ -43,6 +45,8 @@ _Note_ Ensure that all the necessary fields are JSON-stringified before utilizin
 Under the hood, a `DlcManager` instance is created.
 
 The DlcManager is used to manage the life cycle of decentralized lending and borrowing contracts on a blockchain network. It has several methods that handle different stages of the contract life cycle, such as creating, accepting, signing, and rejecting contracts.
+
+<figure><img src="../../.gitbook/assets/DLC.Link_WalletIntegration_Flow.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Bitcoin Lending Flow
 
@@ -96,7 +100,7 @@ If the Router Wallet succesfully validates the accepted Bitcoin Contract offer, 
 
 ### Step 4 | Sign and Broadcast
 
-To sign and broadcast a Bitcoin Contract, you must utilize the countersign_and_broadcast() function, which accepts a signed Bitcoin Contract in JSON format as a param.
+To sign and broadcast a Bitcoin Contract, you must utilize the countersign\_and\_broadcast() function, which accepts a signed Bitcoin Contract in JSON format as a param.
 
 ```ts
 const signedBitcoinContractJSON = JSON.stringify(signedBitcoinContract);
