@@ -10,17 +10,16 @@ description: Blockchains, Applications and Teams building with DLC.Link
 
 {% embed url="https://blog.chain.link/dlc-link-chainlink-grant-bitcoin-discreet-log-contracts/" %}
 
-## Xverse Wallet
+## Leather Wallet (formerly Hiro)
 
-[Xverse](http://www.xverse.app/) is the first production wallet to integrate DLC.link’s signing technology. Going forward, Xverse can be used in applications on any blockchain that can support DLC functionality. We’re excited about the next chapter in Bitcoin’s evolution as a safe, censorship-resistant asset that can now be used in advanced financial applications.
-
-{% embed url="https://www.xverse.app/blog/4-ways-dlc-links-bitcoin-oracles-enable-bitcoin-defi" %}
-
-## Hiro Wallet
-
-[Hiro](https://wallet.hiro.so/) is the predominant wallet in use in the Stacks ecosystem. Hiro supports BTC, STX, Ordinals and is soon adding LN. Over 100,000 people use Hiro to connect to applications created by Stacks and Trust Machines.
+[Leather](https://leather.io/) is the predominant wallet in use in the Stacks ecosystem. Leather supports BTC, STX, Ordinals and is soon adding LN. Over 100,000 people use Leather to connect to applications created by Stacks and Trust Machines.
 
 {% embed url="https://hirowallet.gitbook.io/developers/bitcoin/discreet-log-contracts" %}
 Developer documentation
 {% endembed %}
 
+## Xverse Wallet
+
+[Xverse](http://www.xverse.app/) is an advanced, non-custodial Bitcoin wallet that supports Bitcoin and layers built on top of Bitcoin such as Stacks, Lightning, Ordinals, and more. In 2024, Xverse will support DLCs as well.
+
+{% embed url="https://www.xverse.app/blog/4-ways-dlc-links-bitcoin-oracles-enable-bitcoin-defi" %}
