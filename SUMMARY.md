@@ -4,6 +4,7 @@
 * [Partnerships](partnerships.md)
 * [Lightpaper](lightpaper.md)
 * [Team](the-team.md)
+* [Links](links.md)
 
 ## Applications
 
@@ -26,6 +27,6 @@
   * [Liquidation with NFT](architecture/technical-application-designs/example-liquidation-with-nft.md)
   * [Ordinals in DLCs](architecture/technical-application-designs/ordinals-in-dlcs.md)
 
-## Appendix
+## 中国人
 
-* [Official Links](useful-information/official-links.md)
+* [概览](zhong-guo-ren/gai-lan.md)
