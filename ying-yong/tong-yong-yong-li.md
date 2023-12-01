@@ -1,18 +1,33 @@
 ---
-cover: ../.gitbook/assets/WechatIMG110.jpg
-coverY: 0
+description: DLCs的潜在用例的运行列表
 ---
 
 # 通用用例
 
-DLCs和DLC.Link的概述
+DLCs enable Bitcoin on-chain deposits for lending, trading and investing.\
 
-数十亿美元的比特币资金正等待着在智能合约中用于借贷、对冲和交易。
 
-虽然比特币是最大的数字资产，但它不支持智能合约。今天，如果不先把比特币转移给托管方或跨链桥，就不可能用比特币贷款。然而，迄今为止，托管失败和过桥黑客已导致逾1400亿美元的损失。
+**CeFi Finance and Settlement**
 
-​[DLC.link](http://dlc.link/) 实现了Discreet Log Contracts，这是麻省理工学院的一项发明，可以让应用程序开发人员轻松集成原生比特币。平台将比特币锁定在链上托管，从那里它可以被以太坊和其他智能合约区块链利用。这种“无需信任的桥梁”使借贷、交易、衍生品等成为可能。
+Credit Trading Desks: Integration allows the custodian to provide borrowing and other financial services to their self-custodied Bitcoin clients.
 
-我们将于2024年2月推出dlcBTC，一种非托管包装的比特币。
+Prime Brokers: Integration enables the ability to escrow and conditionally move native Bitcoin with instant finality and without requiring triparty custody.
 
-数十亿美元的比特币资金正等待着在智能合约中用于贷款、对冲和交易。
+Digital Asset Custodians: Integration allows the custodian to provide borrowing and other financial services to miners and other self-custodied Bitcoin clients.
+
+Exchanges and OTC Desks: By facilitating trades via escrow, [DLC.Link](http://dlc.link) provides immediate Bitcoin finality (vs. 24-48 hour execution times where intermediaries are involved) and eliminates slippage on trades by facilitating escrow (where several percentages can cost millions).&#x20;
+
+Payments: Lock BTC to be used in a Lightning transaction. Enable Bitcoin wallets to have a refund transaction.\
+
+
+**DeFi Protocols**
+
+DeFi Lend/Borrow Protocols: Integration provides the ability to provide a soft-pegged stablecoin or loan backed by Bitcoin collateral secured on-chain.
+
+NFTFi Lending Marketplaces: Borrow stablecoin against native Bitcoin.
+
+Cross-Chain Protocols: Integration enables application developers to build smart contracts that move native Bitcoin.
+
+Ordinals trading protocols: Integration enables ordinals to be traded and borrowed against in OpenSea and other smart contract NFT marketplaces.
+
+Miners: Enable Bitcoin hashrate derivatives, allowing conditional BTC mining reward payouts either on Bitcoin or the Lightning Network.
