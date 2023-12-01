@@ -42,7 +42,7 @@
 
 ## 架构
 
-* [架构概览](jia-gou/jia-gou-gai-lan.md)
+* [技术架构](jia-gou/ji-shu-jia-gou.md)
 * [安装与设置](jia-gou/an-zhuang-yu-she-zhi/README.md)
   * [Code Repositories](jia-gou/an-zhuang-yu-she-zhi/code-repositories.md)
   * [Solidity](jia-gou/an-zhuang-yu-she-zhi/solidity.md)
