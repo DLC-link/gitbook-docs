@@ -1,3 +1,3 @@
 # DLC 设计示例
 
-In the upcoming sections, we explore three core functionalities of our technology. First, we detail a DeFi Loan process, revealing how decentralized borrowing works within our framework. Next, we examine liquidation flows, focusing on the handling of defaults and necessary liquidations. Finally, we present a Bitcoin peg-in and peg-out method using an NFT, showcasing the seamless transfer of Bitcoin on and off-chain.
+在接下来的部分中，我们将探讨该技术的三个核心功能。首先，我们详细介绍DeFi贷款流程，揭示去中心化借款在我们的框架内是如何工作的。接下来，我们将研究清算流程，重点关注违约和必要清算的处理。最后，我们提出了一种使用NFT的比特币挂钩和脱钩的方法，展示了比特币链上和链下的无缝转移。

@@ -4,30 +4,30 @@ description: DLCs的潜在用例的运行列表
 
 # 通用用例
 
-DLCs enable Bitcoin on-chain deposits for lending, trading and investing.\
+DLCs 支持比特币链上存款，用于贷款、交易和投资。\
 
 
-**CeFi Finance and Settlement**
+**CeFi金融和結算**
 
-Credit Trading Desks: Integration allows the custodian to provide borrowing and other financial services to their self-custodied Bitcoin clients.
+信用交易:集成允许托管人向其自我托管的比特币客户提供借款和其他金融服务。
 
-Prime Brokers: Integration enables the ability to escrow and conditionally move native Bitcoin with instant finality and without requiring triparty custody.
+Prime Brokers: 集成使托管和有条件地移动本地比特币的能力能够即时完成，而不需要三方托管。
 
-Digital Asset Custodians: Integration allows the custodian to provide borrowing and other financial services to miners and other self-custodied Bitcoin clients.
+数字资产托管人:集成允许托管人向矿工和其他自我托管的比特币客户提供借款和其他金融服务。
 
-Exchanges and OTC Desks: By facilitating trades via escrow, [DLC.Link](http://dlc.link) provides immediate Bitcoin finality (vs. 24-48 hour execution times where intermediaries are involved) and eliminates slippage on trades by facilitating escrow (where several percentages can cost millions).&#x20;
+交易所和场外交易平台:通过托管促进交易, [DLC.Link](http://dlc.link/)提供即时的比特币终局(相对于涉及中介的24-48小时执行时间)，并通过促进托管(其中几个百分比可能花费数百万美元)来消除交易滑点。
 
-Payments: Lock BTC to be used in a Lightning transaction. Enable Bitcoin wallets to have a refund transaction.\
+支付:锁定在闪电交易中使用的比特币。允许比特币钱包进行退款交易。\
 
 
-**DeFi Protocols**
+**DeFi 协议**
 
-DeFi Lend/Borrow Protocols: Integration provides the ability to provide a soft-pegged stablecoin or loan backed by Bitcoin collateral secured on-chain.
+DeFi借贷协议:集成提供了软挂钩稳定币或由链上担保的比特币抵押品支持的贷款的能力
 
-NFTFi Lending Marketplaces: Borrow stablecoin against native Bitcoin.
+NFTFi借贷市场:通过原生比特币借贷稳定币。
 
-Cross-Chain Protocols: Integration enables application developers to build smart contracts that move native Bitcoin.
+跨链协议:集成使应用程序开发人员能够构建移动本地比特币的智能合约。
 
-Ordinals trading protocols: Integration enables ordinals to be traded and borrowed against in OpenSea and other smart contract NFT marketplaces.
+序数交易协议:集成使序数能够在OpenSea和其他智能合约NFT市场中进行交易和借入。
 
-Miners: Enable Bitcoin hashrate derivatives, allowing conditional BTC mining reward payouts either on Bitcoin or the Lightning Network.
+比特币矿工:启用比特币哈希值衍生品，允许在比特币或闪电网络上有条件地支付比特币挖矿奖励。

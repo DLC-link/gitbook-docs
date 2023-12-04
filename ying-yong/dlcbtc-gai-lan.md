@@ -1,43 +1,43 @@
 ---
-description: Non-custodial wrapped Bitcoin for DeFi on Ethereum
+description: 让您的比特币安全参与以太坊上的DeFi活动
 ---
 
 # dlcBTC概览
 
-**Introduction to dlcBTC**
+**dlcBTC介绍**
 
-dlcBTC is a non-custodial representation of Bitcoin on Ethereum, enabling Bitcoin holders to participate in DeFi protocols while retaining full ownership of their assets. It employs Discreet Log Contracts (DLCs) to lock Bitcoin in a 2-of-2 multisig UTXO, with one key held by the user and the other distributed across a decentralized network.
+dlcBTC是比特币在以太坊上的非托管代表，使比特币持有者能够参与DeFi协议，同时保留其资产的完全所有权。它采用谨慎日志合约（DLCs）将比特币锁定在一个2-of-2多签名UTXO中，其中一个密钥由用户持有，另一个密钥分布在去中心化网络中。
 
-**How dlcBTC Works**
+**dlcBTC 的工作流程**
 
-1. **Locking BTC**: Users lock their BTC into a DLC using DLC.Link's bridge. This process mints dlcBTC tokens equivalent to the amount of BTC locked.
-2. **DLC Mechanism**: A DLC acts as a lockbox via a contract on the Bitcoin blockchain, detailing a pre-signed agreement between the user and the protocol.
-3. **Key Distribution**: Users hold one key to the multisig UTXO, and the second is distributed among the attestor nodes. The DLC can only be liquidated back to the user, safeguarding against theft or loss.
-4. **Attestor Layer**: A network of seven trusted node operators monitor blockchain events, announce DLC creations, and validate outcomes. They support the bridge by ensuring reliable cross-chain communication without holding users' keys.
-5. **Using dlcBTC**: Minted dlcBTC tokens can be employed as collateral within various DeFi platforms, such as Curve and AAVE.
+1. **锁定BTC**: 用户使用DLC.Link的协议功能将他们的BTC锁定在DLC中。该过程会铸造相当于锁定的BTC数量的dlcBTC代币。
+2. **DLC 机制**: DLC通过比特币区块链上的合约充当一个锁盒，详细记录了用户和协议之间的预签协议。
+3. **私钥分发**: 用户持有多签UTXO的一把密钥，而第二把密钥分散在验证节点之间。DLC只能被清算给用户，以防止盗窃或丢失。
+4. **认证层**:  一个由七个受信任的节点运营商组成的网络监视区块链事件，宣布DLC创建并验证结果。他们通过确保可靠的跨链通信来支持桥梁，而不持有用户的密钥。
+5. **使用dlcBTC**: Minted的dlcBTC代币可以作为各种DeFi平台（如Curve和AAVE）中的抵押品。
 
-**Comparison to wBTC and Other Bridged Assets**
+**与wBTC和其它桥接资产的比较**
 
-dlcBTC is distinct from wBTC and other bridged assets like tBTC and BTC.B by eliminating the need for intermediaries or custodians, instead locking Bitcoin on-chain with user sovereignty as a core principle. dlcBTC is secured by the full hashrate of the Bitcoin network and doesn't require users to send their BTC to third-party deposit addresses.
+dlcBTC与wBTC和其他桥接资产（如tBTC和BTC.B）不同，它通过消除中介或托管方的需求，将比特币锁定在链上，并将用户主权作为核心原则。dlcBTC由比特币网络的全部哈希率保护，不需要用户将他们的比特币发送到第三方存款地址。
 
-**Minting Mechanism**
+**铸造机制**
 
-The process of minting dlcBTC involves creating a DLC where the user's BTC is locked. This is done via a two-step verification process:
+铸造dlcBTC的过程涉及创建一个DLC，其中用户的BTC被锁定。这是通过两步验证过程完成的：
 
-1. **Initiation**: The user locks BTC into a 2-of-2 multisig address, which triggers the creation of a DLC.
-2. **Confirmation**: Upon confirmation of the locked BTC, dlcBTC tokens are minted and delivered to the user's wallet, reflecting the locked amount.
+1. **创建**: 用户将BTC锁定在一个2-of-2多重签名地址中，这将触发DLC的创建。
+2. **确认**: 确认锁定BTC后，将铸造并交付dlcBTC代币至用户钱包，并显示已锁定的数量。
 
-**Features of dlcBTC v1**
+**dlcBTC v1 的特点**
 
 dlcBTC v1 will launch with the following features:
 
-* **Whitelisted access**: Only Bitcoin miners, exchanges, and financial institutions pre-approved through a stringent vetting process will have access to dlcBTC's bridge, ensuring a secure and controlled environment for significant transactions.
-* **Security**: Depositors lock BTC into the system, with the assurance that all DLC payout addresses direct funds exclusively to the depositor's wallet, making the theft or loss of BTC infeasible.
-* **Redemptions**: Initially, dlcBTC will support dlcBTC-BTC trading pairs on chosen centralized exchanges to ensure direct conversion back to BTC. Additionally, trading pairs like dlcBTC-wBTC and dlcBTC-USDT will be available on widely-used decentralized exchanges.
-* **Integration**: dlcBTC is designed to integrate smoothly with existing DeFi protocols, providing institutions with a seamless transition into decentralized finance.
+* **白名单机制**: 只有经过严格审查流程事先获得批准的比特币矿工、交易所和金融机构才能访问dlcBTC的桥梁，确保重要交易在安全和受控的环境中进行。
+* **安全**: 存款人将比特币锁定在系统中，确保所有DLC支付地址仅将资金直接转到存款人的钱包，使比特币的盗窃或丢失变得不可行。
+* **赎回**: 最初，dlcBTC将在选择的中心化交易所支持dlcBTC-BTC交易对，以确保直接转换回BTC。此外，类似dlcBTC-wBTC和dlcBTC-USDT的交易对将在广泛使用的去中心化交易所上可用。
+* **集成**: dlcBTC旨在与现有的DeFi协议无缝集成，为机构提供平稳过渡进入去中心化金融。
 
-**Launch Plans**
+**启动计划**
 
-dlcBTC v1 is set for release in Q1 2024. Ahead of the launch, a testnet will be available, offering early access and opportunities for user feedback.&#x20;
+dlcBTC v1计划于2024年第一季度发布。在发布之前，将提供测试网络，以提供早期访问和用户反馈的机会。
 
-For updates on our launch, [follow us on Twitter](https://twitter.com/dlc\_link) or [join our Discord](https://discord.gg/pA4rVKfNAA)!
+关于启动计划,请关注, [follow us on Twitter](https://twitter.com/dlc\_link) or [join our Discord](https://discord.gg/pA4rVKfNAA)!

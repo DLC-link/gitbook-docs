@@ -6,20 +6,20 @@ description: 我们是一个高技能的行业专家团队，共同致力于为�
 
 ## **Aki Balogh**
 
-[Aki](https://www.linkedin.com/in/akibalogh/) previously founded MarketMuse, an AI content optimization leader. He holds two patents in semantic keyword analysis and topic modeling. He also serves as an advisor to Dakai.io, creators of El Salvador's Chivo Bitcoin wallet. Previously a VC Associate at OpenView Venture Partners, Aki specialized in scalable database systems at InfiniDB and designed decision-support systems for Fortune 500 clients at Diamond Management & Technology Consultants.
+[Aki](https://www.linkedin.com/in/akibalogh/) 此前创立了人工智能内容优化领导者MarketMuse。他在语义关键词分析和主题建模方面拥有两项专利。他还担任达凯的顾问。萨尔瓦多的Chivo比特币钱包的创造者。在此之前，Aki是OpenView Venture Partners的风险投资合伙人，他在InfiniDB专门从事可扩展数据库系统，并在Diamond Management & Technology Consultants为财富500强客户设计决策支持系统。
 
 ## **Jesse Eisenberg**
 
-[Jesse](https://www.linkedin.com/in/jesses16/) has served in a number of software engineering and engineering management roles, spanning Pivotal Labs, MoPub and Twitter.
+[Jesse](https://www.linkedin.com/in/jesses16/)曾担任Pivotal Labs、MoPub和Twitter等多个软件工程和工程管理职位。
 
 ## Nadav Kohen
 
-[Nadav](https://www.dlc.link/blog/nadav-kohen-joins-dlc-link-as-technical-advisor) is a leading expert in DLCs, having co-created the DLC specification that serves as the foundation for all current implementations. He joins DLC.Link as a Technical Advisor to provide strategic insights and technical guidance. Previously, Nadav authored influential articles on blockchain and DLCs, contributing significantly to the field's development.
+[Nadav](https://www.dlc.link/blog/nadav-kohen-joins-dlc-link-as-technical-advisor) 是DLC领域的顶尖专家，参与创建了DLC规范，作为当前所有实现的基础。他加入DLC.LINK作为技术顾问提供战略见解和技术指导。此前，Nadav撰写了关于区块链和dlc的有影响力的文章，为该领域的发展做出了重大贡献。
 
 ## Seena Foroutan
 
-[Seena](https://www.linkedin.com/in/seenaforoutan/) is a sales leader who advises on building high-performing teams, forging strategic partnerships, and enhancing market presence. He previously served as the Global Head of Go To Market, Defi & Enterprise at Chainlink, where he delivered over $2 Billion in revenue. Prior to that, he served as Global Head of Go To Market, Analytics & Cloud at Coinbase, which he joined through their acquisition of Earn.com
+​[Seena](https://www.linkedin.com/in/seenaforoutan/) 是一名销售领导，为建立高绩效团队、建立战略合作伙伴关系和提高市场占有率提供建议。此前，他曾担任Chainlink的Go To Market, Defi & Enterprise的全球主管，在那里他交付了超过20亿美元的收入。在此之前，他曾担任Coinbase(通过收购Earn.com加入)的Go to Market, Analytics & Cloud的全球主管。
 
 ## Rusty Mason
 
-[Rusty ](https://www.linkedin.com/in/rustymason/)is an experienced Business Development Advisor with a strong background in the blockchain industry. Previously, he served as the Head of Business Development at Thesis, where he developed successful go-to-market strategies and refined the value proposition for tBTC. Rusty also played a pivotal role in establishing Deloitte's blockchain strategy practice, working closely with corporate executives to explore the impact of blockchain on digital media ecosystems.
+[Rusty](https://www.linkedin.com/in/rustymason/) 是一位经验丰富的业务发展顾问，在区块链行业拥有强大的背景。此前，他曾担任Thesis的业务开发主管，在那里他制定了成功的市场策略并完善了tBTC的价值主张。Rusty还在建立德勤的区块链战略实践中发挥了关键作用，与企业高管密切合作，探索区块链对数字媒体生态系统的影响。

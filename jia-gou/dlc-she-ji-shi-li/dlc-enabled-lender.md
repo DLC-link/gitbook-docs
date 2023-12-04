@@ -1,30 +1,30 @@
 ---
-description: An example of a generic DLC-enabled application
+description: 一个通用的支持DLC的应用程序的示例
 ---
 
 # DLC-Enabled Lender
 
-### Components
+### 组成部分
 
-At a high level, the most important parts of the DLC.Link technical systems architecture are the following:
+从高层次上来说，DLC.Link中最重要的技术系统架构如下:
 
-* The Bitcoin Attestors, which act as mediators by signing the outcome for the DLC participants, ([learn more about DLCs](broken-reference))
-* The smart contracts used by the DeFi protocol (e.g. Solidity)
-* The DLC.Link Management Contract
-* And the wallets that participate in the DLC
+* 比特币认证人，他们通过为DLC参与者签署结果来充当调解人([了解更多 DLCs](https://docs.dlc.link/applications/technical-application-designs/simple-case))
+* DeFi协议使用的智能合约 (e.g. Solidity)
+* DLC.Link 的管理协议
+* 参与 DLC的钱包
 
-As an example of an implementation, consider a DeFi lender on Ethereum that loans stablecoins against native, on-chain Bitcoin.
+作为一个实现的例子，考虑以太坊上的DeFi贷方，该贷方将稳定币贷款给原生链上比特币抵押方。
 
-### Open Loan Flow Example
+### 贷款流程示例
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-1. setup a new collateralized loan and calls to the DLC.Link smart contract to set up the Bitcoin DLC contract on the Bitcoin Attestors.
-2. The details of the DLC from the Bitcoin Attestors are forwarded to the user, who can review and sign the DLC with their DLC-enabled Bitcoin wallet. The application also signs their side of the DLC using provided the DLC.Link protocol wallet service.
-3. Once signed, the DLC transaction is submitted to the Bitcoin blockchain. The application's smart contract is notified once the DLC is confirmed.&#x20;
-4. The application's smart contract now has a guarantee of BTC collateral and releases the stablecoin into the user's wallet.
+1. 建立一个新的抵押贷款, 调动DLC.Link智能合约，在比特币认证层上建立比特币DLC合约。
+2. 来自比特币认证者的DLC的详细信息被转发给用户，用户可以使用支持DLC的比特币钱包查看和签名DLC。应用程序还使用DLC.Link协议的钱包服务签署他们一方的DLC协议。
+3. 一旦签名，DLC交易被提交到比特币区块链。一旦DLC被确认，应用程序的智能合约就会得到通知。
+4. 该应用程序的智能合约现在有比特币抵押品的担保，并将稳定币释放到用户的钱包中。
 
-### Close Loan via Repayment
+### Close Loan via Repayment还款结清贷款
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -37,8 +37,19 @@ Above a user wants to repay their stable-coin loan and regain access to their bi
 5. The application's protocol wallet puts the closing transaction on the BTC blockchain.
 6. &#x20;The user can now see the funds in their BTC wallet, and the loan closing is complete.
 
-### Close Loan via Liquidation
 
-When the value of a user's collateral drops below a certain threshold, there can be a liquidation event. Here, a **liquidator** identifies the undercollateralized loan and starts a process to repay the loaned asset and 'buy out' the remaining collateral at a discount, thus keeping the value of the loaned asset stable.
+
+上面，用户希望偿还他们的稳定币贷款并重新获得他们的比特币抵押品。
+
+1. 用户导航到DeFi应用程序网页并选择偿还贷款。
+2. 用户通过应用程序的智能合约发起稳定币的发送。
+3. 应用程序的智能合约与DLC.Link智能合约通信开始关闭DLC。比特币证明人签署了一份还款结果(其他可能的结果可能是清算)。
+4. 对应用程序的智能合约的回调函数通知它DLC已准备好关闭，并且DeFi应用程序网站已更新。
+5. 应用程序的协议钱包将关闭交易放在BTC区块链上。
+6. 用户现在可以看到他们的BTC钱包中的资金，贷款关闭完成。
+
+### Close Loan via Liquidation清算结清贷款
+
+当用户抵押品的价值低于某一阈值时，就会发生清算事件。在这里，清算人确定抵押不足的贷款，并开始偿还贷款资产的过程，并以折扣价“买断”剩余的抵押品，从而保持贷款资产的价值稳定。
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>

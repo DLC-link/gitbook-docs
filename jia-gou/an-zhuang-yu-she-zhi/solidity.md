@@ -1,12 +1,12 @@
 # Solidity
 
-### Smart Contracts
+### 智能合约
 
 #### Ethereum / Solidity
 
-To use DLCs from your Ethereum contract, and let users move native bitcoin directly, import our contract and call the public functions as shown below.
+要使用以太坊合约中的DLCs，并让用户直接移动本地比特币，请导入我们的合约并调用公共函数，如下所示。&#x20;
 
-Note: to always get the most up to date information about the library, please see the README of the repo here: [https://github.com/DLC-link/dlc-solidity](https://github.com/DLC-link/dlc-solidity)
+注意:要始终获得有关函数库的最新信息，请参阅此处的repo的README: [https://github.com/DLC-link/dlc-solidity](https://github.com/DLC-link/dlc-solidity)
 
 ```solidity
 import "github.com/dlc-link/dlc-solidity/contracts/DLCManager.sol";

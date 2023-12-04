@@ -59,7 +59,7 @@ DLC现在已经建立，比特币被锁定，抵押品在第二个区块链上�
 
 既然我们已经描述了整个DLC流程，我们可以单独讨论每个技术部分。
 
-### DLC 证明人
+### DLC 认证者
 
 DLC.Link 架构中最重要的部分是DLC认证层。在某些方面类似于跨链桥上的“验证器网络”，DLC证明分两个步骤工作:
 
@@ -80,26 +80,29 @@ DLC.Link 架构中最重要的部分是DLC认证层。在某些方面类似于�
 
 ### 比特币钱包
 
-A key component of the DLC.Link architecture is our inclusion in various BTC supporting wallets. DLCs are designed so that the smart contracts and Bitcoin Attestors know as little about the details of the bitcoin payments and wallets as possible. This is a great security feature, and means the wallets themselves need to do a good deal of DLC signing.
+另一个DLC.Link 架构中关键的组成部分是各种BTC 支持的钱包。DLCs的设计是为了让智能合约和比特币证明尽可能少地了解比特币支付和钱包的细节。这是一个很好的安全特性，意味着钱包本身需要做大量的DLC签名。
 
-Two types of wallets are anticipated as being needed, one for end users, and one for application services that enterprises would run in an automated fashion.&#x20;
+预计需要两种类型的钱包，一种用于最终用户，另一种用于企业将以自动化方式运行的应用程序服务。
 
-For either case, we have developed and built-upon DLC libraries that will provide this functionality.
+对于这两种情况，我们已经开发并构建了DLC库，将提供此功能。\
 
-#### JS Library for Browser Extensions and Mobile Wallets
 
-For end-user wallets, that are often written in JS or ReactNative, we have a JS library that can easily be dropped into existing web/mobile wallets. We have also developed our own DLC-Enabled BTC wallet for testing purposes.
+**用于浏览器扩展和移动钱包的JS库**
 
-The DLC.Link signing library is publically available here: [https://www.npmjs.com/package/@dlc-link/dlc-tools](https://www.npmjs.com/package/@dlc-link/dlc-tools)
+对于通常用JS或ReactNative编写的终端用户钱包，我们有一个JS库，可以很容易地放入现有的web/移动钱包中。我们还开发了自己的支持dlc的BTC钱包用于测试目的。
 
-DLC signing is available in the Leather wallet. [https://leather.io/](https://leather.io/)
+DLC.Link 签名库在这里公开提供:
 
-You can read more about the JS library and setting it up here:  [bitcoin-wallets.md](../architecture/installation-and-setup/bitcoin-wallets.md "mention")
+[https://www.npmjs.com/package/@dlc-link/dlc-tools](https://www.npmjs.com/package/@dlc-link/dlc-tools)​
 
-#### Router Wallet Service
+DLC 签名可以Leather 钱包中进行:[ https://leather.io/](https://leather.io/)​
 
-We have released a secure, reliable BTC/DLC signing application for financial institutions and dApps to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well-developed and featureful open-source DLC management project. While this service can sign Bitcoin DLC transactions, it does not have wallet functionality, and does not manage any funds directly.
+你可以在这里阅读更多关于JS库和设置的信息: [bitcoin-wallets.md](../architecture/installation-and-setup/bitcoin-wallets.md "mention")
 
-### Smart Contracts
+**Router 钱包服务**
 
-Smart contract integrations provide enhanced security by allowing both the attestor and the system to verify smart contract outputs directly on-chain. This ensures a transparent and trustworthy process. Our Bitcoin Attestors have been connected to blockchain DApps to leverage this benefit, merging the strength of Bitcoin with cutting-edge platforms for application development. The integration process is made even more attractive by its simplicity, requiring only the implementation of the "Open DLC" and "Close DLC" functions. These functions usually consist of fewer than 30 lines of code, making it an accessible solution that combines robust security with efficiency.
+我们为金融机构和dapp发布了一个安全可靠的BTC/DLC签名应用程序，以实现DLC和比特币交互的自动化。该工具是用Rust构建的，并利用了一个开发良好且功能强大的开源DLC管理项目。虽然这项服务可以签署比特币DLC交易，但它没有钱包功能，也不直接管理任何资金。
+
+#### 智能合约
+
+智能合约集成通过允许证明者和系统直接在链上验证智能合约输出来增强安全性。这确保了一个透明和值得信赖的过程。 我们的比特币证明已经连接到区块链DApps，以利用这一优势，将比特币的优势与应用程序开发的前沿平台相结合。集成过程的简单性使其更具吸引力，只需要实现“打开DLC”和“关闭DLC”功能。这些函数通常由不到30行代码组成，使其成为一种可访问的解决方案，它结合了强大的安全性和效率。

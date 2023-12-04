@@ -1,33 +1,33 @@
 ---
-description: ERC-721 NFT Representing Locked Bitcoin Collateral
+description: ERC-721 NFT 代表锁定比特币抵押品的ERC-721 NFT
 ---
 
 # NFT Token Functions
 
-### **Abstract**
+### **摘要**
 
-Here we describe the design and implementation of the DLC.Link Bitcoin-backed ERC-721 NFT, which serves as a "proof-of-collateral" for BTC locked in a DLC. The NFT is minted and sent to the user's wallet upon locking their BTC in the DLC, and its metadata is stored on-chain and on decentralized storage systems such as IPFS. The NFT enables Bitcoin to be used securely and easily in various transactions, including trading, borrowing, and investing. When the NFT is burned, the BTC is released back to the owner's wallet or paid to the burner in a token native to the chain it was burned on.
+在这里，我们描述了DLC的设计和实现。比特币支持的ERC-721 NFT，作为锁定在DLC中的比特币的“抵押品证明”。当用户将BTC锁定在DLC中时，NFT就会被生成并发送到用户的钱包中，其元数据存储在链上和分散的存储系统(如IPFS)上。NFT使比特币能够安全、轻松地用于各种交易，包括交易、借贷和投资。当NFT被烧毁时，BTC被释放回所有者的钱包，或者以被烧毁的链的原生代币支付给烧币者。
 
-### **Introduction**
+### **介绍**
 
-The DLC.Link ERC-721 NFT is a new product designed to facilitate the safe and easy leveraging of bitcoin on other chains. This technical document describes the features and implementation of the NFT, including its design, minting process, metadata storage, and burning process.
+DLC.Link ERC-721 NFT是一款新产品，旨在促进比特币在其他链上的安全和轻松利用。本技术文档描述了NFT的功能和实现，包括其设计、铸造过程、元数据存储和刻录过程。
 
-### **Design**
+### **设计**
 
-The ERC-721 NFT is designed to represent a "proof-of-collateral" for BTC locked in a DLC. The NFT image lists the amount of BTC locked in it, while its metadata is stored on-chain and on decentralized storage systems such as IPFS. The NFT is fully transferable, and it can be used on any platform that supports the ERC-721 standard.
+ERC-721 NFT旨在代表锁定在DLC中的BTC的“抵押品证明”。NFT图像列出了其中锁定的BTC数量，而其元数据存储在链上和分散的存储系统(如IPFS)上。NFT是完全可转移的，它可以在任何支持ERC-721标准的平台上使用。
 
-### **Minting**
+### **铸造**
 
-Upon locking their BTC in a DLC, the NFT is minted and sent to the user's wallet. The NFT serves as a secure and transparent record of the collateral locked in the DLC. This enables users to keep track of their collateral and ensure its security at all times.
+当用户将BTC锁定在DLC中时，NFT就会被铸造并发送到用户的钱包中。NFT作为锁定在DLC中的抵押品的安全和透明的记录。这使用户能够随时跟踪其抵押品并确保其安全性。
 
-### **Metadata Storage**
+### **元数据存储**
 
-The NFT's metadata is stored on-chain and on decentralized storage systems such as IPFS. This provides a high level of security for the collateral locked in the DLC, as the BTC can only be accessed by the owner of the NFT. The NFT's metadata also includes information about the amount of BTC locked in the NFT, making it easy for users to monitor their collateral.
+NFT的元数据存储在链上和分散的存储系统上，如IPFS。这为锁定在DLC中的抵押品提供了高度的安全性，因为BTC只能由NFT的所有者访问。NFT的元数据还包括有关锁定在NFT中的比特币数量的信息，使用户可以轻松监控其抵押品。
 
-### **Burning**
+### **烧毁**
 
-When the user decides to burn their NFT, the BTC locked in the DLC is released back to their bitcoin wallet. This provides a quick and easy way for users to access their collateral when they need it. If another account burns the NFT, they are either paid the value of the NFT in a native token on that chain (e.g. WBTC or ETH on Ethereum) or they can coordinate with the NFT minter to receive native Bitcoin instead.
+当用户决定燃烧他们的NFT时，锁定在DLC中的BTC将被释放回他们的比特币钱包。这为用户在需要时访问其抵押品提供了一种快速简便的方法。如果另一个账户烧毁了NFT，他们要么以该链上的原生代币(例如以太坊上的WBTC或ETH)支付NFT的价值，要么他们可以与NFT矿工协调以接收原生比特币。
 
-Below you can see a demo of how NFTs are minted by locking native BTC, and how they're used on a platform such as https://arcade.xyz.
+下面您可以看到一个演示，演示如何通过锁定本地BTC来生成NFTs，以及如何在[https://arcade.xyz](https://arcade.xyz) 等平台上使用它们。
 
 {% embed url="https://youtu.be/MsjzQwaQVjo" %}
