@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 * [Partnerships](partnerships.md)
-* [Lightpaper & Audit Reports](lightpaper.md)
+* [Lightpaper & Audit Reports](resources.md)
 * [Team](the-team.md)
 * [Links](links.md)
 
