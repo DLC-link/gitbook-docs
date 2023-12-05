@@ -1,4 +1,4 @@
-# Official Links
+# Links
 
 ### Website
 
@@ -19,3 +19,7 @@
 ### Youtube
 
 [https://www.youtube.com/@dlc-link](https://www.youtube.com/@dlc-link)
+
+### LinkTree
+
+[https://linktr.ee/dlc\_link](https://linktr.ee/dlc\_link)
