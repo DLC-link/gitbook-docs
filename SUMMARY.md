@@ -10,6 +10,7 @@
 
 * [Generic Use Cases](applications/generic-use-cases.md)
 * [dlcBTC Overview](applications/dlcbtc-overview.md)
+* [dlcBTC Testnet Access](applications/dlcbtc-testnet-access.md)
 
 ## Architecture
 
