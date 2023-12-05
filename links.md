@@ -16,10 +16,10 @@
 
 [https://discord.com/invite/pA4rVKfNAA](https://discord.com/invite/pA4rVKfNAA)
 
-### Youtube
+### YouTube
 
 [https://www.youtube.com/@dlc-link](https://www.youtube.com/@dlc-link)
 
-### LinkTree
+### Linktree
 
 [https://linktr.ee/dlc\_link](https://linktr.ee/dlc\_link)
