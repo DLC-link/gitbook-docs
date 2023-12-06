@@ -6,7 +6,7 @@ DLC.Link正在实现对锁定的ordinal作为DLC的抵押品的支持。
 
 Notes:
 
-* An ordinal is a unique numeric reference to a single satoshi, usually one that has had some content permanently inscribed onto it. However, that satoshi is often part of a larger UTXO. DLCs lock UTXOs, so please keep that context in mind.序数是对单个聪的唯一数字引用，通常是一个永久铭刻在其上的内容。然而，这个聪通常是一个更大的UTXO的一部分。DLCs 锁定UTXOs，请记住这点。
+* ordinal是对单个聪的唯一数字引用，通常是一个永久铭刻在其上的内容。然而，这个聪通常是一个更大的UTXO的一部分。DLCs 锁定UTXOs，请记住这点。
 * 在所有情况下，锁定和随后解锁DLC的交易费用由双方分摊。
 
 ### Supported types of DLCs支持的种类
@@ -21,7 +21,7 @@ Notes:
 
 这种情况支持的用例是: 当DLC的发行方将包含ordinal的UTXO锁定在DLC中，并且将任何数量的附加抵押品锁定在DLC中。
 
-1. In this case, the outcome of the UTXO containing the ordinal will go to either party A or B, without resizing (as described earlier) 在这种情况下，包含序数的UTXO的结果将发送给A方或B方，而不需要调整大小(如前所述)。
+1. 在这种情况下，包含序数的UTXO的结果将发送给A方或B方，而不需要调整大小(如前所述)。
 2. The remaining collateral locked by either, or both, parties can be split between the parties based on the standard DLC enumerated or numerical outcome guidelines.
 
 ### How it works工作原理

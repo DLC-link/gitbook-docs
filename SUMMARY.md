@@ -31,7 +31,7 @@
 
 * [概览](zhong-wen/gai-lan.md)
 * [合作伙伴](zhong-wen/he-zuo-huo-ban.md)
-* [技术白皮书](zhong-wen/ji-shu-bai-pi-shu.md)
+* [技术白皮书与审计报告](zhong-wen/ji-shu-bai-pi-shu-yu-shen-ji-bao-gao.md)
 * [团队](zhong-wen/tuan-dui.md)
 * [链接](zhong-wen/lian-jie.md)
 
