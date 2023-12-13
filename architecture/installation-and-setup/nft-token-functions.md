@@ -26,7 +26,7 @@ The NFT's metadata is stored on-chain and on decentralized storage systems such 
 
 ### **Burning**
 
-When the user decides to burn their NFT, the BTC locked in the DLC is released back to their bitcoin wallet. This provides a quick and easy way for users to access their collateral when they need it. If another account burns the NFT, they are either paid the value of the NFT in a native token on that chain (e.g. WBTC or ETH on Ethereum) or they can coordinate with the NFT minter to receive native Bitcoin instead.
+When the user decides to burn their NFT, the BTC locked in the DLC is released back to their bitcoin wallet. This provides a quick and easy way for users to access their collateral when they need it. If another account burns the NFT, the underlying sats move to the counterparty ("Bob") wallet. The party that burned the NFT can then redeem its value with Bob (a "broker").
 
 Below you can see a demo of how NFTs are minted by locking native BTC, and how they're used on a platform such as https://arcade.xyz
 
