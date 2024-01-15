@@ -45,8 +45,3 @@
   * [比特币钱包](jia-gou/an-zhuang-yu-she-zhi/bi-te-bi-qian-bao.md)
   * [DLC 认证人](jia-gou/an-zhuang-yu-she-zhi/dlc-ren-zheng-ren.md)
   * [NFT Token Functions](jia-gou/an-zhuang-yu-she-zhi/nft-token-functions.md)
-* [DLC 设计示例](jia-gou/dlc-she-ji-shi-li/README.md)
-  * [DLC-Enabled Lender](jia-gou/dlc-she-ji-shi-li/dlc-enabled-lender.md)
-  * [Liquidation Flows清算流程](jia-gou/dlc-she-ji-shi-li/liquidation-flows-qing-suan-liu-cheng.md)
-  * [Liquidation with NFT](jia-gou/dlc-she-ji-shi-li/liquidation-with-nft.md)
-  * [Ordinals in DLCs](jia-gou/dlc-she-ji-shi-li/ordinals-in-dlcs.md)
