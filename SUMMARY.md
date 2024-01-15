@@ -21,11 +21,6 @@
   * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
   * [DLC Attestors](architecture/installation-and-setup/dlc-attestors.md)
   * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
-* [Example DLC Designs](architecture/technical-application-designs/README.md)
-  * [DLC-Enabled Lender](architecture/technical-application-designs/simple-case.md)
-  * [Liquidation Flows](architecture/technical-application-designs/liquidation-flows.md)
-  * [Liquidation with NFT](architecture/technical-application-designs/example-liquidation-with-nft.md)
-  * [Ordinals in DLCs](architecture/technical-application-designs/ordinals-in-dlcs.md)
 
 ## 中文
 
