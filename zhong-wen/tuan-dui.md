@@ -20,6 +20,3 @@ description: 我们是一个高技能的行业专家团队，共同致力于为�
 
 ​[Seena](https://www.linkedin.com/in/seenaforoutan/) 是一名销售领导，为建立高绩效团队、建立战略合作伙伴关系和提高市场占有率提供建议。此前，他曾担任Chainlink的Go To Market, Defi & Enterprise的全球主管，在那里他交付了超过20亿美元的收入。在此之前，他曾担任Coinbase(通过收购Earn.com加入)的Go to Market, Analytics & Cloud的全球主管。
 
-## Rusty Mason
-
-[Rusty](https://www.linkedin.com/in/rustymason/) 是一位经验丰富的业务发展顾问，在区块链行业拥有强大的背景。此前，他曾担任Thesis的业务开发主管，在那里他制定了成功的市场策略并完善了tBTC的价值主张。Rusty还在建立德勤的区块链战略实践中发挥了关键作用，与企业高管密切合作，探索区块链对数字媒体生态系统的影响。
