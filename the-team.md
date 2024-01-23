@@ -14,13 +14,13 @@ description: >-
 
 [Jesse](https://www.linkedin.com/in/jesses16/) has served in a number of software engineering and engineering management roles, spanning Pivotal Labs, MoPub and Twitter.
 
-## Nadav Kohen
-
-[Nadav](https://www.dlc.link/blog/nadav-kohen-joins-dlc-link-as-technical-advisor) is a leading expert in DLCs, having co-created the DLC specification that serves as the foundation for all current implementations. He joins DLC.Link as a Technical Advisor to provide strategic insights and technical guidance. Previously, Nadav authored influential articles on blockchain and DLCs, contributing significantly to the field's development.
-
 ## Peter M. Moricz
 
 As our Partnerships Lead, [Peter ](https://www.linkedin.com/in/petermmoricz/)brings a multifaceted background to DLC.Link. With over 20 years of experience as a derivatives trader, both in floor trading and electronic trading, he has developed a deep understanding of financial markets. His career includes significant roles at JP Morgan in compliance, providing him with expertise in regulatory standards and practices. As Managing Partner at SuperNova.Fund, Moricz focused on Web3, DAOs, Social Tokens, DeFi Derivatives, and original NFT use cases.
+
+## Nadav Kohen
+
+[Nadav](https://www.dlc.link/blog/nadav-kohen-joins-dlc-link-as-technical-advisor) is a leading expert in DLCs, having co-created the DLC specification that serves as the foundation for all current implementations. He joins DLC.Link as a Technical Advisor to provide strategic insights and technical guidance. Previously, Nadav authored influential articles on blockchain and DLCs, contributing significantly to the field's development.
 
 ## Seena Foroutan
 
