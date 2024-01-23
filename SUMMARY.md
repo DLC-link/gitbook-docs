@@ -1,19 +1,15 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Partnerships](partnerships.md)
+* [dlcBTC Overview](dlcbtc-overview.md)
 * [Lightpaper & Audit Reports](resources.md)
 * [Team](the-team.md)
 * [Links](links.md)
 
-## Applications
-
-* [Generic Use Cases](applications/generic-use-cases.md)
-* [dlcBTC Overview](applications/dlcbtc-overview.md)
-
 ## Architecture
 
 * [Architecture Overview](architecture/tech-stack.md)
+* [Generic Use Cases](architecture/generic-use-cases.md)
 * [Installation and Setup](architecture/installation-and-setup/README.md)
   * [Code Repositories](architecture/installation-and-setup/code-repository.md)
   * [Solidity](architecture/installation-and-setup/solidity.md)
