@@ -6,7 +6,7 @@ description: Non-custodial wrapped Bitcoin for DeFi on Ethereum
 
 **Introduction to dlcBTC**
 
-dlcBTC is a non-custodial representation of Bitcoin on Ethereum, enabling Bitcoin holders to participate in DeFi protocols while retaining full ownership of their assets. It employs Discreet Log Contracts (DLCs) to lock Bitcoin in a 2-of-2 multisig UTXO, with one key held by the user and the other distributed across a decentralized network.
+dlcBTC is a non-custodial representation of Bitcoin on Ethereum, enabling Bitcoin holders to participate in DeFi protocols while retaining full ownership of their assets. It employs Discreet Log Contracts (DLCs) to lock Bitcoin in a multisig UTXO, with one key held by the user and the other distributed across a decentralized network.
 
 **How dlcBTC Works**
 
