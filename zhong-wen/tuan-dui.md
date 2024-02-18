@@ -12,6 +12,10 @@ description: 我们是一个高技能的行业专家团队，共同致力于为�
 
 [Jesse](https://www.linkedin.com/in/jesses16/)曾担任Pivotal Labs、MoPub和Twitter等多个软件工程和工程管理职位。
 
+## Peter M. Moricz
+
+作为我们的合作伙伴关系负责人，[Peter](https://www.linkedin.com/in/petermmoricz/)为DLC.Link带来了多方面的背景。他在场内交易和电子交易方面拥有超过20年的衍生品交易员经验，并对金融市场有着深刻的理解。他曾在摩根大通合规部门担任重要职务，积累了监管标准和实践方面的专业知识。同时，作为SuperNova基金的管理合伙人，Moricz专注于Web3, DAOs，社交代币，DeFi衍生品和原始NFT用例。
+
 ## Nadav Kohen
 
 [Nadav](https://www.dlc.link/blog/nadav-kohen-joins-dlc-link-as-technical-advisor) 是DLC领域的顶尖专家，参与创建了DLC规范，作为当前所有实现的基础。他加入DLC.LINK作为技术顾问提供战略见解和技术指导。此前，Nadav撰写了关于区块链和dlc的有影响力的文章，为该领域的发展做出了重大贡献。
