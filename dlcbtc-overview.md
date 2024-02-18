@@ -18,7 +18,15 @@ dlcBTC is a non-custodial representation of Bitcoin on Ethereum, enabling Bitcoi
 
 **Comparison to wBTC and Other Bridged Assets**
 
-dlcBTC is distinct from wBTC and other bridged assets like tBTC and BTC.B by eliminating the need for intermediaries or custodians, instead locking Bitcoin on-chain with user sovereignty as a core principle. dlcBTC is secured by the full hashrate of the Bitcoin network and doesn't require users to send their BTC to third-party deposit addresses.
+dlcBTC is distinct from wBTC and other bridged assets like tBTC and BTC.B by eliminating the need for intermediaries or custodians, instead locking Bitcoin on-chain with user sovereignty as a core principle.&#x20;
+
+dlcBTC is secured by the full hashrate of the Bitcoin network and doesn't require users to send their BTC to third-party deposit addresses.
+
+Compared to wBTC specifically, dlcBTC offers three advantages:
+
+1. Self-wrapped: dlcBTC is minted by having depositors (dlcBTC merchants) self-wrap, locking BTC with themselves in a DLC. Self-wrapping means that the DLC can only pay out to the original depositor, such that the BTC cannot be stolen in a hack or confiscated by government actions.
+2. Fully automated: wBTC takes 3-12 hours to mint or burn due to manual steps in BitGo's custody process. dlcBTC is fully automated and can mint and burn in 3-6 BTC block confirmations
+3. Flexible fee arrangement: Since DLC.Link is not a custodian, dlcBTC has less overhead and can offer more competitive mint and burn fees.
 
 **Minting Mechanism**
 
