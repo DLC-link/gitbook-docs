@@ -32,7 +32,7 @@ Compared to wBTC specifically, dlcBTC offers three advantages:
 
 The process of minting dlcBTC involves creating a DLC where the user's BTC is locked. This is done via a two-step verification process:
 
-1. **Initiation**: The user locks BTC into a 2-of-2 multisig address, which triggers the creation of a DLC.
+1. **Initiation**: The user locks BTC into a special multisig address, which triggers the creation of a DLC.
 2. **Confirmation**: Upon confirmation of the locked BTC, dlcBTC tokens are minted and delivered to the user's wallet, reflecting the locked amount.
 
 **Features of dlcBTC v1**
