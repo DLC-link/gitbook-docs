@@ -34,7 +34,7 @@ Here we will describe how a user interaction with the DLC system looks, followin
 
 **Setting up the DLC**
 
-Starting in the top left of the diagram, and following the blue "open DLC" line.
+Starting in the top left of the diagram, and following the blue "Setup DLC" line.
 
 1. The user interacts with a dApp's smart contract, for example to create a new loan or deposit vault in the dApp. Usually a user will indicate how much Bitcoin collateral they want to lock.
 2. The dApp smart contract calls the _open-dlc_ function on the DLC.Link smart contract.
@@ -50,7 +50,7 @@ The DLC is now set up, the Bitcoin is locked, and the collateral is in-use on th
 
 **Closing the DLC**
 
-Starting in the top left of the diagram, and following the purple "open DLC" line.
+Starting in the top left of the diagram, and following the purple "Close DLC" line.
 
 1. An event occurs on the smart blockchain, such as repaying a loan or otherwise triggering the close flow of the vault. This calls the _close-dlc_ function on the DLC.Link smart contract.
 2. That is picked up by the attestors, which publish a **DLC attestation** signature.
