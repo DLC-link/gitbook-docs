@@ -11,16 +11,16 @@ dlcBTC is a non-custodial representation of Bitcoin on Ethereum, enabling Bitcoi
 **How dlcBTC Works**
 
 1. **Locking BTC**: Users lock their BTC into a DLC using DLC.Link's bridge. This process mints dlcBTC tokens equivalent to the amount of BTC locked.
-2. **DLC Mechanism**: A DLC acts as a lockbox via a contract on the Bitcoin blockchain, detailing a pre-signed agreement between the user and the protocol.
+2. **DLC Mechanism**: A DLC acts as a lockbox via a "contract" on the Bitcoin blockchain, taking the form of a pre-signed agreement of possible transaction outcomes between the user and the protocol.
 3. **Key Distribution**: Users hold one key to the multisig UTXO, and the second is distributed among the attestor nodes. The DLC can only be liquidated back to the user, safeguarding against theft or loss.
-4. **Attestor Layer**: A network of seven trusted node operators monitor blockchain events, announce DLC creations, and validate outcomes. They support the bridge by ensuring reliable cross-chain communication without holding users' keys.
+4. **Attestor Layer**: A network of seven trusted node operators monitor blockchain events, accept DLC  creations, and validate EVM blockchain outcomes. They support the bridge by ensuring reliable cross-chain communication without holding users' keys or having custodial ownership of the locked funds.
 5. **Using dlcBTC**: Minted dlcBTC tokens can be employed as collateral within various DeFi platforms, such as Curve and AAVE.
 
 **Comparison to wBTC and Other Bridged Assets**
 
 dlcBTC is distinct from wBTC and other bridged assets like tBTC and BTC.B by eliminating the need for intermediaries or custodians, instead locking Bitcoin on-chain with user sovereignty as a core principle.&#x20;
 
-dlcBTC is secured by the full hashrate of the Bitcoin network and doesn't require users to send their BTC to third-party deposit addresses.
+dlcBTC is secured by the full hashrate of the Bitcoin network and doesn't require users to send their BTC to third-party custodial deposit addresses.
 
 Compared to wBTC specifically, dlcBTC offers three advantages:
 
@@ -35,6 +35,13 @@ The process of minting dlcBTC involves creating a DLC where the user's BTC is lo
 1. **Initiation**: The user locks BTC into a special multisig address, which triggers the creation of a DLC.
 2. **Confirmation**: Upon confirmation of the locked BTC, dlcBTC tokens are minted and delivered to the user's wallet, reflecting the locked amount.
 
+**Burning / Redeption Mechanism**
+
+The processes of redeeming ones Bitcoin after burning the dlcBTC wrapped token is as follows:
+
+1. **Burn Tokens**: The wrapped tokens are burned by the issuing contract.
+2. **Confirmation**: The Attestors read this change in the DLC state on the EVM smart contract, and build a consensus to release the user's locked bitcoin using the payout script provided when during the minting process!
+
 **Features of dlcBTC v1**
 
 dlcBTC v1 will launch with the following features:
@@ -46,7 +53,7 @@ dlcBTC v1 will launch with the following features:
 
 **Launch Plans**
 
-dlcBTC v1 is set for release in Q1 2024. Ahead of the launch, a testnet will be available, offering early access and opportunities for user feedback.&#x20;
+dlcBTC v1 is set for release in Q2 2024. Ahead of the launch, a testnet will be available, offering early access and opportunities for user feedback.&#x20;
 
 For updates on our launch, [follow us on Twitter](https://twitter.com/dlc\_link) or [join our Discord](https://discord.gg/pA4rVKfNAA)!
 
