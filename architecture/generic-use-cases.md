@@ -4,7 +4,9 @@ description: A running list of potential use cases for DLCs
 
 # Generic Use Cases
 
-DLCs enable Bitcoin on-chain deposits for lending, trading and investing.\
+DLCs enable Bitcoin on-chain deposits for lending, trading and investing.
+
+Currently we at DLC.Link are focused singularly on creating the most simple, secure, trustless Bitcoin to EVM bridge on the market. Our current solution is designed purely for this goal. However the function of a DLC Attestor can easily be broadened to support arbitrary functions between Bitcoin and smart contract chains. Below are a few use cases we're considering for the future.\
 
 
 **CeFi Finance and Settlement**

@@ -9,7 +9,7 @@
 ## Architecture
 
 * [Architecture Overview](architecture/tech-stack.md)
-* [Solidity](architecture/solidity.md)
+* [Solidity](architecture/installation-and-setup/solidity.md)
 * [Generic Use Cases](architecture/generic-use-cases.md)
 
 ## 中文
