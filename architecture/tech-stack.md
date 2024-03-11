@@ -20,7 +20,7 @@ This structure also ensures that the details of Bitcoin payments and wallets are
 
 Currently we're supporting Ethereum or a corresponding L2. Other EVM chains will follow soon, and then Solana, Polkadot, Cosmos and other chains will be added later.
 
-## Components of a DLC
+## Steps of a DLC
 
 <figure><img src="../.gitbook/assets/DLC.Link_TechnicalFlow_latest.png" alt=""><figcaption></figcaption></figure>
 
@@ -51,46 +51,34 @@ Starting in the top left of the diagram, and following the purple "open DLC" lin
 
 Now that we've described the whole DLC flow, we can discuss each piece of the technology individually.
 
+## Components of the DLC.Link Architecture
+
 ### DLC Attestors
 
-The most important part of the DLC.Link architecture is the DLC Attestation Layer. Similar in some ways to "validator networks" on bridges, the DLC Attestors work in two steps:
+The most important part of the DLC.Link architecture is the DLC Attestation Layer. Similar in some ways to "validator networks" on bridges, the DLC Attestors work have two main functions:
 
-1. The DLC Attestors create a DLC **announcement** when the user indicates that they want to lock bitcoin. This event is used by the bitcoin wallets.&#x20;
-2. Later, the DLC Attestors listen for a corresponding event on Ethereum or Stacks (or other chain) regarding the outcome of the DLC, and sign a corresponding **attestation.**&#x20;
-
-With the **attestation,** the participant's bitcoin wallet is able to sign one and only one of the CETs in the original outcome set. Thus the Bitcoin UTXO is "moved," or assigned to the new wallet based on that CET.
+1. **Bridging BTC to EVM chain**
+   1. The DLC.Link Attestors accept the details of a BTC bridging request, which consist of a PSBT and a locking transaction, and check the state of a controlling EVM contract.&#x20;
+   2. Once validated and confirmed on BTC chain, the nodes form a consensus and use a threshold ecdsa signature to execute the bridging action on the smart contract. In the case of the DLC.Link bridge, that mints dlcBTC tokens.
+2. **Redeeming BTC from EVM chain**
+   1. Later, the DLC.Link Attestors listen for a corresponding event on EVM. In the case of the DLC.Link Bridge, this would be the burn of the associated dlcBTC tokens. The Attestors form a consensus and sign a schnorr threshold signature  to unlock the previously locked BTC collateral, and broadcast out the bitcoin TX.
+   2. When the redeem tx is confirmed, they again form consensus and use a threshold ecdsa signature to close the DLC flow.
 
 The Bitcoin Attestors consist of independent nodes running DLC Attestor software. They are managed and run by independent third-party node operators, who may run exactly one node each. Together they make up the Bitcoin Attestation Layer for DLC.Link.
 
-In addition to creating announcements and attestations for DLC outcomes, the Attestor fulfills a listening function, responding to the **create** and **payout** events on the corresponding **DLC.Link Manager smart contract**. With no business logic in the Attestor, but rather just a **listen-and-sign** process, discreetness and security are ensured, and through a back-checking entity that verifies the results of the Bitcoin Attestors on-chain we can always ensure that an Attestor is behaving well. This verification guarantees the accuracy of the Attestors' actions and provides assurance against manipulation at any point in the process. It is visable thorugh the **DLC.Link Health Dashboard** (coming soon).
+With no business logic in the Attestor, but rather just a **listen-and-sign** mechanism, _discreetness_ and security are ensured. Through a reputation system and back-checking entity run by all the nodes, which verifies the results of the Bitcoin Attestors on-chain, we can be sure that an Attestor is behaving well. This verification guarantees the accuracy of the Attestors' actions and provides assurance against manipulation at any point in the process. This is then completely visable through the **DLC.Link Health Dashboard** (coming soon).
 
-Bitcoin Attestors, operated by various independent node operators, work to attest to the payout outcome in a decentralized manner. Their functionality is abstract, meaning Attestors don't know the specific outcome or participants, enhancing security. Consensus among multiple Attestors is used for signing, leveraging decentralized security. Misbehaving Attestors can be penalized through slashing, maintaining integrity.
+Bitcoin Attestors, operated by various independent node operators, work to attest to the payout outcomes in a decentralized manner. Misbehaving Attestors can be penalized through slashing, maintaining integrity.
 
 Read more about Bitcoin Attestors here: [https://www.dlc.link/blog/what-is-a-bitcoin-attestor](https://www.dlc.link/blog/what-is-a-bitcoin-attestor)
 
-### Bitcoin Wallets
+### Supported Bitcoin Wallets
 
-A key component of the DLC.Link architecture is our inclusion in various BTC supporting wallets. DLCs are designed so that the smart contracts and Bitcoin Attestors know as little about the details of the bitcoin payments and wallets as possible. This is a great security feature, and means the wallets themselves need to do a good deal of DLC signing.
-
-Two types of wallets are anticipated as being needed, one for end users, and one for application services that enterprises would run in an automated fashion.&#x20;
-
-For either case, we have developed and built-upon DLC libraries that will provide this functionality.
-
-#### JS Library for Browser Extensions and Mobile Wallets
-
-For end-user wallets, that are often written in JS or ReactNative, we have a JS library that can easily be dropped into existing web/mobile wallets. We have also developed our own DLC-Enabled BTC wallet for testing purposes.
-
-The DLC.Link signing library is publically available here: [https://www.npmjs.com/package/@dlc-link/dlc-tools](https://www.npmjs.com/package/@dlc-link/dlc-tools)
-
-DLC signing is available in the Leather wallet. [https://leather.io/](https://leather.io/)
-
-You can read more about the JS library and setting it up here:  [bitcoin-wallets.md](installation-and-setup/bitcoin-wallets.md "mention")
-
-#### Router Wallet Service
-
-We have released a secure, reliable BTC/DLC signing application for financial institutions and dApps to automate their DLC and Bitcoin interactions. This tool is built in Rust and leverages a well-developed and featureful open-source DLC management project. While this service can sign Bitcoin DLC transactions, it does not have wallet functionality, and does not manage any funds directly.
+DLC.Link technology is supported by any bitcoin wallet which supports Taproot, and can sign PSBTs. We are working to put together a list of wallets confirmed to be compatible (coming soon).&#x20;
 
 ### Smart Contracts
 
-Smart contract integrations provide enhanced security by allowing both the attestor and the system to verify smart contract outputs directly on-chain. This ensures a transparent and trustworthy process. Our Bitcoin Attestors have been connected to blockchain DApps to leverage this benefit, merging the strength of Bitcoin with cutting-edge platforms for application development. The integration process is made even more attractive by its simplicity, requiring only the implementation of the "Open DLC" and "Close DLC" functions. These functions usually consist of fewer than 30 lines of code, making it an accessible solution that combines robust security with efficiency.
+At DLC.Link, we believe the power of Bitcoin will be fulfilled when it is trustlessly bridged to a trusted smart contract chain where it can be fully leveraged. We therefore have powered our DLC.Link Attestors by our secure and heavily audited smart contract on an EVM chain. With this design, verifying the bridge is operating correctly (audit) is simple and clear, as the Attestors are simply responsible for doing consensus signing of the requests which come from the EVM contract.
+
+Our contracts are fully open source, and can be found in the Solidity section on this docs page.
 
