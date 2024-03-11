@@ -97,7 +97,7 @@ DLC.Link 签名库在这里公开提供:
 
 DLC 签名可以Leather 钱包中进行:[ https://leather.io/](https://leather.io/)​
 
-你可以在这里阅读更多关于JS库和设置的信息: [bitcoin-wallets.md](../architecture/installation-and-setup/bitcoin-wallets.md "mention")
+你可以在这里阅读更多关于JS库和设置的信息: [Broken link](broken-reference "mention")
 
 **Router 钱包服务**
 

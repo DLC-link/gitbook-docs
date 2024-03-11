@@ -9,14 +9,8 @@
 ## Architecture
 
 * [Architecture Overview](architecture/tech-stack.md)
+* [Solidity](architecture/solidity.md)
 * [Generic Use Cases](architecture/generic-use-cases.md)
-* [Installation and Setup](architecture/installation-and-setup/README.md)
-  * [Code Repositories](architecture/installation-and-setup/code-repository.md)
-  * [Solidity](architecture/installation-and-setup/solidity.md)
-  * [Stacks / Clarity](architecture/installation-and-setup/stacks-clarity.md)
-  * [Bitcoin Wallets](architecture/installation-and-setup/bitcoin-wallets.md)
-  * [DLC Attestors](architecture/installation-and-setup/dlc-attestors.md)
-  * [NFT Token Functions](architecture/installation-and-setup/nft-token-functions.md)
 
 ## 中文
 
