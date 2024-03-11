@@ -18,11 +18,7 @@ This structure also ensures that the details of Bitcoin payments and wallets are
 
 ## Supported Blockchains
 
-Currently we're supporting Ethereum as well as the [Stacks](https://www.stacks.co/) blockchain. Other EVM chains will follow soon, and then Solana, Polkadot, Cosmos and other chains will be added later.
-
-### Onboarding new Blockchains
-
-Onboarding a new blockchain primarily requires launching a DLC-Link management smart contract, and configuring the Attestors to listen to events. Adding new EVM compatible chains requires little effort, but other chains would likely take some weeks, followed by a security assessment and testing phase. Since our tool bridges between native Bitcoin and smart chains, and leverages Bitcoin wallets and decentralized Bitcoin Attestors, it can integrate with nearly any blockchain that handles financial transactions. This flexibility means that there are minimal requirements on the underlying blockchain, allowing for broad development potential.
+Currently we're supporting Ethereum or a corresponding L2. Other EVM chains will follow soon, and then Solana, Polkadot, Cosmos and other chains will be added later.
 
 ## Components of a DLC
 
@@ -37,14 +33,11 @@ Here we will describe how a user interaction with the DLC system looks, followin
 Starting in the top left of the diagram, and following the blue "open DLC" line.
 
 1. The user interacts with a dApp's smart contract, for example to create a new loan or deposit vault in the dApp. Usually a user will indicate how much Bitcoin collateral they want to lock.
-2. The dApp smart contract calls the _open-dlc_ function on the DLC.Link smart contract.
-3. The DLC.Link attestors pick up the event, and publish a **DLC announcement.**
-4. Once the transaction is complete, the dApp contract can optimistically assume the announcement exists on the attestors. It can then show the user a link to lock the Bitcoin into the DLC.
-5. The user clicks a button with a label something similar to "Lock Bitcoin." This triggers the DLC-enabled wallet to display the details of the DLC, and upon approval, broadcasts the Bitcoin tx to lock the BTC into the DLC.
-   1. Behind the scenes, the DLC flow has a few steps. The first step is that the website requests a DLC Offer message from the dApp's Bitcoin wallet, and hands it off to the user's Bitcoin wallet. The wallets then automatically move through the Accecpt and Sign steps of the DLC flow.
-   2. Finally, the user views the details, and chooses to accept. Only then does the Bitcoin tx broadcast and lock BTC into the DLC.
-   3. The CETs, which represent the set of possible outcomes of the Bitcoin collateral in the DLC, and are similar to partially signed BTC transactions, are stored encrypted in a secure storage system. They will be used again during the closing flow.
-6. When the Bitcoin tx hits 6 confirmations, a message is sent to the dApp's smart contract indicating that the Bitcoin collateral is safely locked in the DLC, and the vault or loan should now be active. _This message indicating the DLC is funded is the responsibility of the dApp's bitcoin wallet application, which is a custom application of DLC.Link. That is because it's in the dApp;s interest to not give out loans incorrectly._&#x20;
+2. The dApp smart contract calls the _open-dlc_ function on the DLC.Link smart contract on the EVM chain.
+3. The DLC.Link Attestors pick up the event, and create a DLC Event in their datastore**.**
+4. Once the transaction is complete, the user can build the BTC locking transaction, and the corresponding pre-signed payout transaction (PSBT), and send those details to the Attestor Network.
+5. When the Attestor Network comes to a consensus that this "locking transaction" conforms to the exact specifications needed, and that there is enough confirmations for security, the Attestors do a threshold signing to the EVM smart contract, marking the locking process as complete.
+6. In the case of the DLC Bitcoin Bridge, this in-turn mints the associated wrapped tokens (dlcBTC). In other future cases, there can be other actions taken after the BTC bridging confirmation is validated.
 
 The DLC is now set up, the Bitcoin is locked, and the collateral is in-use on the second blockchain.
 
@@ -52,9 +45,9 @@ The DLC is now set up, the Bitcoin is locked, and the collateral is in-use on th
 
 Starting in the top left of the diagram, and following the purple "open DLC" line.
 
-1. An event occurs on the smart blockchain, such as repaying a loan or otherwise triggering the close flow of the vault. This calls the _close-dlc_ function on the DLC.Link smart contract.
-2. That is picked up by the attestors, which publish a **DLC attestation** signature.
-3. Either Bitcoin wallet (user's or dApp's) will periodically check the attestors, and see the attstation has been published. That wallet uses that attestation to sign the winning CET, and broadcast it to the BTC network, then closing the DLC and moving out the BTC.
+1. An event occurs on the smart blockchain, such as burning the wrapped token, which triggers the close flow of the vault. This calls the _close-dlc_ function on the DLC.Link smart contract.
+2. That is picked up by the Attestors. When a consensus agree that the token burn has occured, they will perform a threshold signing to close the DLC, and return the locked BTC back to the original owner. NOTE: returning the BTC to the original owner is the only possible outcome supported currently, thus providing an unprecidented level of security for a Bitcoin bridge.
+3. When the return of the locked BTC collateral is confirmed on-chain, the Attestors build consensus to write back to the EVM contract, marking the whole flow as complete.
 
 Now that we've described the whole DLC flow, we can discuss each piece of the technology individually.
 
