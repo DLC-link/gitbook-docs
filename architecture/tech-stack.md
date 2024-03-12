@@ -22,32 +22,25 @@ Currently we're supporting Ethereum or a corresponding L2. Other EVM chains will
 
 ## Steps of a DLC
 
-<figure><img src="../.gitbook/assets/DLC.Link_TechnicalFlow_latest.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DLC.Link_MintFlow_New_Simple.png" alt=""><figcaption></figcaption></figure>
 
 ### A Standard DLC Flow
 
-Here we will describe how a user interaction with the DLC system looks, following along with the picture above.
+**Mint flow**
 
-**Setting up the DLC**
+1. The user initiates an atomic swap between themselves and the DLC.Link Bitcoin bridge. This is known as the pre-funding transaction. This means the user locks their bitcoin into a time-lock transaction, and automatically gets it back if anything goes wrong during the process. As an example, if the user does not claim the ERC20 tokens, they bitcoin will automatically return to them.
+2. The user creates two transactions (partially signed bitcoin transactions) to send to the attestors.
+3.
+   1. The first, known as the funding-transaction, will be used to spend the UTXOs from the pre-funding transaction.
+   2. The second, known as the payout-transaction will be used as the future final payout of the DLC. This is built in such a way that the bridge can only send the locked collateral back to the original owner.
+4. The attestor network enters its validation phase, verifying the DLC pre-funding transaction is confirmed and valid, and checks the general health of the platform to ensure everything looks good.&#x20;
+5. If all is valid, the attestors call the setup function on the bridge EVM contract, preparing the ERC20 dlcBTC tokens.
+6. When the user claims the ERC20 tokens from the hash, she is required to reveal a secret to the attestors, as part of the atomic swap process.
+7. The attestors use the secret to unlock pre-funding tx into the standard DLC funding tx, where it will stay until it’s paid back to the user upon redeem.
 
-Starting in the top left of the diagram, and following the blue "open DLC" line.
+**Redeem flow**
 
-1. The user interacts with a dApp's smart contract, for example to create a new loan or deposit vault in the dApp. Usually a user will indicate how much Bitcoin collateral they want to lock.
-2. The dApp smart contract calls the _open-dlc_ function on the DLC.Link smart contract on the EVM chain.
-3. The DLC.Link Attestors pick up the event, and create a DLC Event in their datastore**.**
-4. Once the transaction is complete, the user can build the BTC locking transaction, and the corresponding pre-signed payout transaction (PSBT), and send those details to the Attestor Network.
-5. When the Attestor Network comes to a consensus that this "locking transaction" conforms to the exact specifications needed, and that there is enough confirmations for security, the Attestors do a threshold signing to the EVM smart contract, marking the locking process as complete.
-6. In the case of the DLC Bitcoin Bridge, this in-turn mints the associated wrapped tokens (dlcBTC). In other future cases, there can be other actions taken after the BTC bridging confirmation is validated.
-
-The DLC is now set up, the Bitcoin is locked, and the collateral is in-use on the second blockchain.
-
-**Closing the DLC**
-
-Starting in the top left of the diagram, and following the purple "open DLC" line.
-
-1. An event occurs on the smart blockchain, such as burning the wrapped token, which triggers the close flow of the vault. This calls the _close-dlc_ function on the DLC.Link smart contract.
-2. That is picked up by the Attestors. When a consensus agree that the token burn has occured, they will perform a threshold signing to close the DLC, and return the locked BTC back to the original owner. NOTE: returning the BTC to the original owner is the only possible outcome supported currently, thus providing an unprecidented level of security for a Bitcoin bridge.
-3. When the return of the locked BTC collateral is confirmed on-chain, the Attestors build consensus to write back to the EVM contract, marking the whole flow as complete.
+1. Later, when the ERC20 tokens are burned, the attestors pick up that event from the smart contract chain, sign the closing transaction, and the user’s BTC is spent back to their wallet.
 
 Now that we've described the whole DLC flow, we can discuss each piece of the technology individually.
 
