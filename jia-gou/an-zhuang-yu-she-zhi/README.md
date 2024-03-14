@@ -24,15 +24,7 @@ DLCs使得比特币可以用于链上存款，以进行借贷、交易和投资�
 
 **DeFi 协议**
 
-DeFi Lend/Borrow Protocols: Integration provides the ability to provide a soft-pegged stablecoin or loan backed by Bitcoin collateral secured on-chain.
 
-NFTFi Lending Marketplaces: Borrow stablecoin against native Bitcoin.
-
-Cross-Chain Protocols: Integration enables application developers to build smart contracts that move native Bitcoin.
-
-Ordinals trading protocols: Integration enables ordinals to be traded and borrowed against in OpenSea and other smart contract NFT marketplaces.
-
-Miners: Enable Bitcoin hashrate derivatives, allowing conditional BTC mining reward payouts either on Bitcoin or the Lightning Network.
 
 DeFi借贷/借出协议：集成提供了通过链上保护的比特币抵押提供软锚定稳定币或贷款的能力。&#x20;
 

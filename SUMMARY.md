@@ -22,6 +22,6 @@
 
 ## 技术架构
 
-* [技术概览](ji-shu-jia-gou/ji-shu-gai-lan.md)
-* [Solidity](ji-shu-jia-gou/solidity.md)
-* [通用用例](ji-shu-jia-gou/tong-yong-yong-li.md)
+* [技术概览](jia-gou/ji-shu-jia-gou.md)
+* [Solidity](jia-gou/tong-yong-yong-li.md)
+* [通用用例](jia-gou/an-zhuang-yu-she-zhi/README.md)
