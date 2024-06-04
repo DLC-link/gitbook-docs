@@ -4,20 +4,34 @@
 
 Download our latest lightpaper here:
 
-{% file src=".gitbook/assets/dlc-link.pdf" %}
+{% file src=".gitbook/assets/DLC.Link Litepaper (1).pdf" %}
 
-Read the original DLC whitepaper, published by Tadge Dryja at MIT:
+Read the original DLC whitepaper, published in 2018 by Tadge Dryja at MIT:
 
 {% file src=".gitbook/assets/dlc.pdf" %}
 
 ### Security Audit Reports
 
-The following is a security audit report, completed by the team at CoinFabrik on November 29, 2023.
+On May 7, 2024, MetaTrust completed a security audit of DLC.Link's architecture. No Critical or High issues were found.
+
+{% file src=".gitbook/assets/DLC.link-attestor_FINAL_1715082047003.pdf" %}
+DLC Attestor code audit
+{% endfile %}
+
+{% file src=".gitbook/assets/DLC-link-solidity_FINAL_20240507.pdf" %}
+dlcBTC Solidity contract audit
+{% endfile %}
+
+
+
+Previously, the team at CoinFabrik completed a security audit of DLC.Link's infrastructure on November 29, 2023.
 
 {% file src=".gitbook/assets/DLC-Link Audit-Final.pdf" %}
+CoinFabrik security audit
+{% endfile %}
 
-### Platform Design Review
-
-The following is a high level review and audit of the architectural design of the DLC.LInk platform, completed by the team at CoinFabrik in October, 2023.
+CoinFabrik also completed a high level review of DLC.Link's architectural, on August 2023.
 
 {% file src=".gitbook/assets/DLC-Link - Platform Design Review.pdf" %}
+CoinFabrik Platform design review
+{% endfile %}
