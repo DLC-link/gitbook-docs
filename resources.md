@@ -12,6 +12,10 @@ Read the original DLC whitepaper, published in 2018 by Tadge Dryja at MIT:
 
 ### Security Audit Reports
 
+On July 4th, 2024, MetaTrust completed a security audit of DLC.Link's newest EVM smart contracts. No Critical or High issues were found, and all issues were either resolved or identified as non-issues.
+
+{% file src=".gitbook/assets/DLC.Link Jul 4_FINAL_1720195281355.pdf" %}
+
 On May 7, 2024, MetaTrust completed a security audit of DLC.Link's architecture. No Critical or High issues were found.
 
 {% file src=".gitbook/assets/DLC.link-attestor_FINAL_1715082047003.pdf" %}
