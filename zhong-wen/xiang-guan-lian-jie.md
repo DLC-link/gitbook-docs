@@ -10,7 +10,7 @@
 
 ### Twitter&#x20;
 
-[https://twitter.com/dlc\_link](https://twitter.com/dlc\_link)
+[https://x.com/dlcBTC](https://x.com/dlcBTC)
 
 ### Discord&#x20;
 
@@ -18,12 +18,12 @@
 
 ### YouTube
 
-[https://www.youtube.com/@dlc-link](https://www.youtube.com/@dlc-link)
+[https://www.youtube.com/@dlcBitcoin](https://www.youtube.com/@dlcBitcoin)
 
 ### Linktree
 
-[https://linktr.ee/dlc\_link](https://linktr.ee/dlc\_link)
+[https://linktr.ee/dlcbtc](https://linktr.ee/dlcbtc)
 
 ### Telegram
 
-[https://t.me/dlclink](https://t.me/dlclink)
+[https://t.me/dlcbtc](https://t.me/dlcbtc)
