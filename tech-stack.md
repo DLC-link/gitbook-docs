@@ -14,7 +14,7 @@ Please read more about our philosophy here: [https://www.dlc.link/blog/introduci
 
 Discreet Log Contracts (DLCs) create a secure and decentralized framework for financial transactions. By predefining possible outcomes for locked Bitcoin collateral, and running the business logic on a blockchain in smart contracts, DLCs significantly minimize the potential for errors or malicious acts.&#x20;
 
-This structure also ensures that the details of Bitcoin payments and wallets are kept secret, aligning with the principles of privacy and trustlessness. Furthermore, the use of Bitcoin Attestors in a consensus-based, abstract manner adds another layer of security, leveraging the power of decentralized security while maintaining integrity and trust in the system.
+This structure also ensures that the details of Bitcoin payments and wallets are kept secret, aligning with the principles of privacy and trust-minimization. Furthermore, the use of Bitcoin Attestors in a consensus-based, abstract manner adds another layer of security, leveraging the power of decentralized security while maintaining integrity and trust in the system.
 
 ## Supported Blockchains
 
@@ -22,7 +22,7 @@ Currently we're supporting Ethereum or a corresponding L2. Other EVM chains will
 
 ## Steps of a DLC
 
-<figure><img src="../.gitbook/assets/DLC.Link_MintFlow_New_Simple.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/DLC.Link_MintFlow_New_Simple.png" alt=""><figcaption></figcaption></figure>
 
 ### A Standard DLC Flow
 
@@ -71,7 +71,7 @@ DLC.Link technology is supported by any bitcoin wallet which supports Taproot, a
 
 ### Smart Contracts
 
-At DLC.Link, we believe the power of Bitcoin will be fulfilled when it is trustlessly bridged to a trusted smart contract chain where it can be fully leveraged. We therefore have powered our DLC.Link Attestors by our secure and heavily audited smart contract on an EVM chain. With this design, verifying the bridge is operating correctly (audit) is simple and clear, as the Attestors are simply responsible for doing consensus signing of the requests which come from the EVM contract.
+At DLC.Link, we believe the power of Bitcoin will be fulfilled when it is bridged in a decentralized, non-custodial way to a reputable smart contract chain where it can be fully leveraged. We therefore have powered our DLC.Link Attestors by our secure and heavily audited smart contract on an EVM chain. With this design, verifying the bridge is operating correctly (audit) is simple and clear, as the Attestors are simply responsible for doing consensus signing of the requests which come from the EVM contract.
 
 Our contracts are fully open source, and can be found in the Solidity section on this docs page.
 
