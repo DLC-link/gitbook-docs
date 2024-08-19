@@ -9,7 +9,7 @@ Although Bitcoin is the largest digital asset, it thus far cannot be used in DeF
 
 [DLC.Link](http://dlc.link/) utilizes the concepts of Discreet Log Contracts, invented at MIT by the co-creator of the Lightning Network, to provide a trust-minimized bridge to DeFi on Ethereum without centralizing or pooling assets.&#x20;
 
-We will be launching dlcBTC, a non-custodial wrapped Bitcoin, in April 2024.
+We will be launching dlcBTC, a self-custodial wrapped Bitcoin, in April 2024.
 
 {% hint style="info" %}
 Billions of dollars in Bitcoin capital is waiting to be used in smart contracts for lending, hedging, and trading.
