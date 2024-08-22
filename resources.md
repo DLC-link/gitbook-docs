@@ -12,6 +12,8 @@ Read the original DLC whitepaper, published in 2018 by Tadge Dryja at MIT:
 
 ### Bug Bounty Program
 
+We have partnered with Remedy with our active bug-bounty program for the EVM smart contracts, please see the following link for more details and to participate.
+
 [https://r.xyz/program/dlc-link](https://r.xyz/program/dlc-link)
 
 ### Security Audit Reports
